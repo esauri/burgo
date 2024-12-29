@@ -1,10 +1,17 @@
 import { t } from "@lingui/core/macro";
 import type { Viewport } from "next";
 import { Geist } from "next/font/google";
-import { type ReactNode } from "react";
+import { type ReactNode, Suspense } from "react";
+import { Toaster } from "sonner";
 import { LOCALES } from "~/constants/i18n";
 import type { Language } from "~/types/Language";
+import { getUser } from "~/usecases/auth";
 import { getI18nInstance, initializeI18n } from "~/usecases/i18n";
+import { AuthMenu, AuthMenuFallback } from "./_components/AuthMenu";
+import {
+  AuthTabButton,
+  AuthTabButtonFallback,
+} from "./_components/AuthTabButton";
 import { Header } from "./_components/Header";
 import { I18nProvider } from "./_components/I18nProvider";
 import { TabBar } from "./_components/TabBar";
@@ -61,6 +68,7 @@ export async function generateMetadata(props: Props) {
 
 export default async function RootLayout(props: Props) {
   const { lang } = await props.params;
+  const authPromise = getUser();
   const i18n = initializeI18n(lang);
   const { children } = props;
 
@@ -68,9 +76,24 @@ export default async function RootLayout(props: Props) {
     <html className={geistSans.variable} dir="ltr" lang={lang}>
       <body className="bg-background text-foreground antialiased max-lg:pb-15">
         <I18nProvider locale={lang} messages={i18n.messages}>
-          <Header lang={lang} />
+          <Header
+            authItem={
+              <Suspense fallback={<AuthMenuFallback />}>
+                <AuthMenu authPromise={authPromise} lang={lang} />
+              </Suspense>
+            }
+            lang={lang}
+          />
           {children}
-          <TabBar lang={lang} />
+          <TabBar
+            authItem={
+              <Suspense fallback={<AuthTabButtonFallback />}>
+                <AuthTabButton authPromise={authPromise} lang={lang} />
+              </Suspense>
+            }
+            lang={lang}
+          />
+          <Toaster richColors />
         </I18nProvider>
       </body>
     </html>

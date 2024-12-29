@@ -1,5 +1,6 @@
 import { FlatCompat } from "@eslint/eslintrc";
 import eslintConfigPrettier from "eslint-config-prettier";
+import pluginLingui from "eslint-plugin-lingui";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -13,6 +14,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   eslintConfigPrettier,
+  pluginLingui.configs["flat/recommended"],
 ];
 
 export default eslintConfig;

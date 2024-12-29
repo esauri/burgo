@@ -2,14 +2,16 @@ import { Trans, useLingui } from "@lingui/react/macro";
 import { SearchIcon, ShoppingCartIcon } from "lucide-react";
 import Image from "next/image";
 import NextLink from "next/link";
+import type { ReactNode } from "react";
 import { TextField } from "~/components/TextField";
 import { Language } from "~/types/Language";
 
 type Props = {
+  authItem: ReactNode;
   lang: Language;
 };
 
-export function Header({ lang }: Props) {
+export function Header({ authItem, lang }: Props) {
   const { t } = useLingui();
 
   return (
@@ -53,6 +55,7 @@ export function Header({ lang }: Props) {
             </span>
             <ShoppingCartIcon className="size-6" />
           </NextLink>
+          {authItem}
         </div>
       </nav>
     </header>
