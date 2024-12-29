@@ -1,0 +1,22 @@
+{
+  "background_color": "#f2f3f3",
+  "description": "Custom built hamburgers",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192"
+    }
+  ],
+  "id": "/?source=pwa",
+  "name": "Burgo",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Burgo",
+  "start_url": "/",
+  "theme_color": "#030303"
+}

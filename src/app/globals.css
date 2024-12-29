@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --font-*: initial;
+    --font-sans: var(--font-sans), sans-serif;
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
