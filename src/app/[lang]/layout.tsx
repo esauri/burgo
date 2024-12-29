@@ -17,7 +17,6 @@ import { I18nProvider } from "./_components/I18nProvider";
 import { TabBar } from "./_components/TabBar";
 import "./globals.css";
 
-// If loading a variable font, you don't need to specify the font weight
 const geistSans = Geist({
   display: "swap",
   variable: "--font-sans",

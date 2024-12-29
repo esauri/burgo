@@ -3,9 +3,9 @@
 import { z } from "zod";
 import { ERROR_CODE } from "~/constants/errors";
 import { FORM_STATE_STATUS } from "~/constants/formState";
-import { getFieldErrorMessageFromZodError } from "~/helpers/actions";
 import { InternalError } from "~/helpers/errors";
 import { redirectToLocalizedPath } from "~/helpers/i18n.server";
+import { getFieldErrorMessageFromZodError } from "~/helpers/zod";
 import type { ErrorCode } from "~/types/Error";
 import type { FormStateStatus } from "~/types/FormState";
 import { createAccount } from "~/usecases/auth";

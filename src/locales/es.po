@@ -37,7 +37,7 @@ msgstr "Letra grande"
 msgid "Body Small"
 msgstr "Letra pequeña"
 
-#: src/app/[lang]/layout.tsx:60
+#: src/app/[lang]/layout.tsx:59
 msgid "Burger App"
 msgstr "App de Hamburguesas"
 
@@ -59,7 +59,7 @@ msgstr "Crear"
 msgid "Create Account"
 msgstr "Crear cuenta"
 
-#: src/app/[lang]/layout.tsx:61
+#: src/app/[lang]/layout.tsx:60
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
 
