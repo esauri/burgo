@@ -1,9 +1,10 @@
-import { t } from "@lingui/core/macro";
+import { msg } from "@lingui/core/macro";
 import type { Viewport } from "next";
 import { Geist } from "next/font/google";
 import { type ReactNode, Suspense } from "react";
 import { Toaster } from "sonner";
-import { LOCALES } from "~/constants/i18n";
+import { config } from "~/config/server";
+import { DEFAULT_LOCALE, LOCALES } from "~/constants/i18n";
 import type { Language } from "~/types/Language";
 import { getUser } from "~/usecases/auth";
 import { getI18nInstance, initializeI18n } from "~/usecases/i18n";
@@ -17,6 +18,8 @@ import { I18nProvider } from "./_components/I18nProvider";
 import { TabBar } from "./_components/TabBar";
 import "./globals.css";
 
+const { SITE_URL } = config;
+
 const geistSans = Geist({
   display: "swap",
   variable: "--font-sans",
@@ -25,7 +28,9 @@ const geistSans = Geist({
 
 export const experimental_ppr = true;
 
-export async function generateStaticParams() {
+export const dynamicParams = false;
+
+export function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }));
 }
 
@@ -56,13 +61,26 @@ export async function generateMetadata(props: Props) {
   const i18n = getI18nInstance(lang);
 
   return {
-    title: t(i18n)`Burgo`,
-    description: t(i18n)`Custom built hamburgers`,
+    alternates: {
+      canonical: `/${DEFAULT_LOCALE}`,
+      languages: Object.fromEntries(
+        LOCALES.filter((lang) => lang !== DEFAULT_LOCALE).map((lang) => [
+          lang,
+          lang,
+        ]),
+      ),
+    },
+    description: i18n._(msg`Custom built hamburgers`),
     icons: {
       apple: "/assets/icons/apple-touch-icon.png",
       icon: "/assets/icons/icon.svg",
     },
     manifest: "/manifest.webmanifest",
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: i18n._(msg`Burgo`),
+      template: i18n._(msg`'%s | Burgo`),
+    },
   };
 }
 

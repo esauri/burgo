@@ -13,9 +13,21 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/app/[lang]/layout.tsx:82
+msgid "'%s | Burgo"
+msgstr "'%s | Burgo"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:56
+msgid "{calorie} Calories"
+msgstr "{calorie} Calories"
+
 #: src/app/[lang]/account/page.tsx:26
 msgid "Account"
 msgstr "Account"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:81
+msgid "Add To Cart"
+msgstr "Add To Cart"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:106
 msgid "Already have an account?"
@@ -37,14 +49,14 @@ msgstr "Body Large"
 msgid "Body Small"
 msgstr "Body Small"
 
-#: src/app/[lang]/layout.tsx:59
+#: src/app/[lang]/layout.tsx:81
 #: src/app/[lang]/_components/Header.tsx:26
 msgid "Burgo"
 msgstr "Burgo"
 
-#: src/app/[lang]/page.tsx:18
-msgid "Burgo Hamburgers"
-msgstr "Burgo Hamburgers"
+#: src/app/[lang]/page.tsx:23
+msgid "Burgo Menu"
+msgstr "Burgo Menu"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:102
 msgid "Create"
@@ -56,7 +68,7 @@ msgstr "Create"
 msgid "Create Account"
 msgstr "Create Account"
 
-#: src/app/[lang]/layout.tsx:60
+#: src/app/[lang]/layout.tsx:73
 msgid "Custom built hamburgers"
 msgstr "Custom built hamburgers"
 
@@ -131,6 +143,11 @@ msgstr "Go to Home"
 msgid "Got to Account"
 msgstr "Got to Account"
 
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:68
+#: src/app/[lang]/_components/ProductCard.tsx:29
+msgid "Image of {name}"
+msgstr "Image of {name}"
+
 #: src/helpers/errors.ts:16
 msgid "Invalid email or password"
 msgstr "Invalid email or password"
@@ -167,6 +184,10 @@ msgstr "Logout"
 msgid "Name"
 msgstr "Name"
 
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:51
+msgid "Nutrition"
+msgstr "Nutrition"
+
 #: src/app/[lang]/style-guide/page.tsx:30
 #: src/app/[lang]/style-guide/page.tsx:43
 msgid "Outline Button"
@@ -180,6 +201,22 @@ msgstr "Outline Link"
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:84
 msgid "Password"
 msgstr "Password"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:37
+msgid "Price"
+msgstr "Price"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:32
+msgid "Product information"
+msgstr "Product information"
+
+#: src/helpers/errors.ts:22
+msgid "Product not found"
+msgstr "Product not found"
+
+#: src/app/[lang]/products/[productId]/_components/Header.tsx:17
+msgid "Products"
+msgstr "Products"
 
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"

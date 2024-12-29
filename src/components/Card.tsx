@@ -1,10 +1,11 @@
+import { Image } from "@unpic/react";
 import type { ComponentProps } from "react";
 import { cn } from "~/helpers/cn";
 import { Text } from "./Text";
 
-function Container({ className, ...props }: ComponentProps<"div">) {
+function Container({ className, ...props }: ComponentProps<"article">) {
   return (
-    <div
+    <article
       className={cn([
         "border-border bg-card text-card-foreground rounded-xl border",
         className,
@@ -52,6 +53,27 @@ function Footer({ className, ...props }: ComponentProps<"div">) {
   );
 }
 
+type ThumbnailProps = {
+  alt: string;
+  className: string;
+  src: string;
+  priority: boolean;
+};
+
+function Thumbnail({ alt, ...props }: ThumbnailProps) {
+  return (
+    <figure className="overflow-hidden rounded-t-xl">
+      <Image
+        alt={alt}
+        breakpoints={[256, 304, 320, 327, 354, 382, 592]}
+        height={240}
+        layout="fullWidth"
+        {...props}
+      />
+    </figure>
+  );
+}
+
 export const Card = {
   Container,
   Content,
@@ -59,4 +81,5 @@ export const Card = {
   Footer,
   Header,
   Title,
+  Thumbnail,
 };
