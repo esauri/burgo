@@ -13,7 +13,20 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/[lang]/layout.tsx:33
+#: src/app/[lang]/style-guide/page.tsx:25
+msgid "Body"
+msgstr "Letra"
+
+#: src/app/[lang]/style-guide/page.tsx:24
+msgid "Body Large"
+msgstr "Letra grande"
+
+#: src/app/[lang]/style-guide/page.tsx:26
+msgid "Body Small"
+msgstr "Letra pequeña"
+
+#: src/app/[lang]/layout.tsx:52
+#: src/app/[lang]/_components/Header.tsx:24
 msgid "Burgo"
 msgstr "Burgo"
 
@@ -21,6 +34,83 @@ msgstr "Burgo"
 msgid "Burgo Hamburgers"
 msgstr "Hambuguesas Burgo"
 
-#: src/app/[lang]/layout.tsx:34
+#: src/app/[lang]/layout.tsx:53
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
+
+#: src/app/[lang]/style-guide/page.tsx:32
+#: src/app/[lang]/style-guide/page.tsx:49
+msgid "Destructive Button"
+msgstr "Botón destructivo"
+
+#: src/app/[lang]/style-guide/page.tsx:69
+msgid "Destructive Link"
+msgstr "Enlace destructivo"
+
+#: src/app/[lang]/style-guide/page.tsx:29
+#: src/app/[lang]/style-guide/page.tsx:40
+msgid "Filled Button"
+msgstr "Botón lleno"
+
+#: src/app/[lang]/style-guide/page.tsx:60
+msgid "Filled Link"
+msgstr "Enlace lleno"
+
+#: src/app/[lang]/style-guide/page.tsx:31
+#: src/app/[lang]/style-guide/page.tsx:46
+msgid "Ghost Button"
+msgstr "Botón fantasma"
+
+#: src/app/[lang]/style-guide/page.tsx:66
+msgid "Ghost Link"
+msgstr "Enlace fantasma"
+
+#: src/app/[lang]/_components/TabBar.tsx:29
+msgid "Go to Cart"
+msgstr "Ir al carrito"
+
+#: src/app/[lang]/_components/TabBar.tsx:17
+msgid "Go to Home"
+msgstr "Ir a inicio"
+
+#: src/app/[lang]/style-guide/page.tsx:27
+msgid "Label"
+msgstr "Etiqueta"
+
+#: src/app/[lang]/style-guide/page.tsx:36
+#: src/app/[lang]/style-guide/page.tsx:55
+msgid "Link Button"
+msgstr "Botón de enlace"
+
+#: src/app/[lang]/style-guide/page.tsx:75
+msgid "Link Link"
+msgstr "Enlace de enlace"
+
+#: src/app/[lang]/style-guide/page.tsx:30
+#: src/app/[lang]/style-guide/page.tsx:43
+msgid "Outline Button"
+msgstr "Botón de contorno"
+
+#: src/app/[lang]/style-guide/page.tsx:63
+msgid "Outline Link"
+msgstr "Enlace de contorno"
+
+#: src/app/[lang]/style-guide/page.tsx:22
+msgid "Title"
+msgstr "Título"
+
+#: src/app/[lang]/style-guide/page.tsx:21
+msgid "Title Large"
+msgstr "Título grande"
+
+#: src/app/[lang]/style-guide/page.tsx:23
+msgid "Title Small"
+msgstr "Titulo pequeño"
+
+#: src/app/[lang]/_components/Header.tsx:52
+msgid "View Cart"
+msgstr "Ver carrito"
+
+#: src/app/[lang]/_components/Header.tsx:39
+msgid "What are you hungry for?"
+msgstr "¿Qué deseas comer?"

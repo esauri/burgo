@@ -1,11 +1,74 @@
 @import "tailwindcss";
 
 @theme {
-    --font-*: initial;
-    --font-sans: var(--font-sans), sans-serif;
+  /* Colors */
+  --brg-color-black: oklch(9.18% 0 0);
+  --brg-color-gray-darkest: oklch(19.93% 0.0082 17.86);
+  --brg-color-gray-darker: oklch(24.84% 0 0);
+  --brg-color-gray-dark: oklch(56.84% 0.0076 259.94);
+  --brg-color-gray: oklch(51.03% 0 0);
+  --brg-color-gray-light: oklch(74.57% 0.0234 259.94);
+  --brg-color-gray-lighter: oklch(91.57% 0 0);
+  --brg-color-gray-lightest: oklch(96.27% 0.0011 197.14);
+  --brg-color-white: oklch(100% 0 106.37);
+
+  --brg-color-yellow: oklch(83.48% 0.1702 82.27);
+  --brg-color-red: oklch(63.15% 0.1931 29.74);
+
+  /* Theme */
+  --color-*: initial;
+
+  --color-background: var(--brg-color-gray-lightest);
+  --color-foreground: var(--brg-color-black);
+
+  --color-border: var(--brg-color-gray-lighter);
+
+  --color-primary: var(--brg-color-yellow);
+  --color-primary-foreground: var(--brg-color-black);
+
+  --color-destructive: var(--brg-color-red);
+  --color-destructive-foreground: var(--brg-color-white);
+
+  --color-disabled: var(--brg-color-gray-dark);
+  --color-disabled-foreground: var(--brg-color-gray-darkest);
+
+  --color-muted: var(--brg-color-gray);
+  --color-muted-foreground: var(--brg-color-white);
+
+  --color-card: var(--brg-color-white);
+  --color-card-foreground: var(--brg-color-black);
+
+  --font-*: initial;
+  --font-sans: var(--font-sans), sans-serif;
 }
 
 @utility container {
-    margin-inline: auto;
-    padding-inline: 2rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+:root {
+  @media (prefers-color-scheme: dark) {
+    --color-background: var(--brg-color-gray-darkest);
+    --color-foreground: var(--brg-color-white);
+
+    --color-border: var(--brg-color-black);
+
+    --color-card: var(--brg-color-gray-darker);
+    --color-card-foreground: var(--brg-color-white);
+  }
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.grid-template-areas-stack {
+  grid-template-areas: "stack";
+}
+
+.grid-area-stack {
+  grid-area: stack;
 }
