@@ -1,14 +1,16 @@
 import { Trans } from "@lingui/react/macro";
 import { ShoppingCartIcon } from "lucide-react";
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { Language } from "~/types/Language";
 import { TabButton } from "./TabButton";
 
 type Props = {
+  authItem: ReactNode;
   lang: Language;
 };
 
-export function TabBar({ lang }: Props) {
+export function TabBar({ authItem, lang }: Props) {
   return (
     <nav className="bg-card text-card-foreground fixed bottom-0 w-full pb-[env(safe-area-inset-bottom)] lg:hidden">
       <div className="container flex items-center justify-center gap-6">
@@ -30,6 +32,7 @@ export function TabBar({ lang }: Props) {
           </span>
           <ShoppingCartIcon className="size-6 active:scale-90" />
         </TabButton>
+        {authItem}
       </div>
     </nav>
   );

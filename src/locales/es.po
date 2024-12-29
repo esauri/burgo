@@ -13,6 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/app/[lang]/account/page.tsx:26
+msgid "Account"
+msgstr "Cuenta"
+
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:106
+msgid "Already have an account?"
+msgstr "¿Ya tienes una cuenta?"
+
+#: src/helpers/errors.ts:8
+msgid "An account with this email already exists"
+msgstr "Una cuenta con este email ya existe"
+
 #: src/app/[lang]/style-guide/page.tsx:25
 msgid "Body"
 msgstr "Letra"
@@ -25,16 +37,29 @@ msgstr "Letra grande"
 msgid "Body Small"
 msgstr "Letra pequeña"
 
-#: src/app/[lang]/layout.tsx:52
-#: src/app/[lang]/_components/Header.tsx:24
+#: src/app/[lang]/layout.tsx:60
+msgid "Burger App"
+msgstr "App de Hamburguesas"
+
+#: src/app/[lang]/_components/Header.tsx:26
 msgid "Burgo"
 msgstr "Burgo"
 
 #: src/app/[lang]/page.tsx:18
 msgid "Burgo Hamburgers"
-msgstr "Hambuguesas Burgo"
+msgstr "Hamburguesas Burgo"
 
-#: src/app/[lang]/layout.tsx:53
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:102
+msgid "Create"
+msgstr "Crear"
+
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:85
+#: src/app/[lang]/(auth)/create-account/page.tsx:20
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:33
+msgid "Create Account"
+msgstr "Crear cuenta"
+
+#: src/app/[lang]/layout.tsx:61
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
 
@@ -47,14 +72,40 @@ msgstr "Botón destructivo"
 msgid "Destructive Link"
 msgstr "Enlace destructivo"
 
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:83
+msgid "Don’t have an account?"
+msgstr "¿No tienes una cuenta?"
+
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:43
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:65
+msgid "Email"
+msgstr "Email"
+
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:36
+msgid "Enter your email and set a password to get started"
+msgstr "Entra tu email y establece una contraseña para comenzar"
+
+#: src/helpers/errors.ts:10
+msgid "Failed to create account"
+msgstr "Fallo al crear cuenta"
+
+#: src/helpers/errors.ts:18
+msgid "Failed to log out"
+msgstr "Fallo al cerrar sesión"
+
 #: src/app/[lang]/style-guide/page.tsx:29
 #: src/app/[lang]/style-guide/page.tsx:40
 msgid "Filled Button"
-msgstr "Botón lleno"
+msgstr "Botón relleno"
 
 #: src/app/[lang]/style-guide/page.tsx:60
 msgid "Filled Link"
-msgstr "Enlace lleno"
+msgstr "Enlace relleno"
+
+#: src/app/[lang]/_components/AuthMenu.tsx:39
+#: src/app/[lang]/_components/AuthMenu.tsx:48
+msgid "Get Started"
+msgstr "Empezar"
 
 #: src/app/[lang]/style-guide/page.tsx:31
 #: src/app/[lang]/style-guide/page.tsx:46
@@ -65,13 +116,31 @@ msgstr "Botón fantasma"
 msgid "Ghost Link"
 msgstr "Enlace fantasma"
 
-#: src/app/[lang]/_components/TabBar.tsx:29
+#: src/app/[lang]/_components/TabBar.tsx:31
 msgid "Go to Cart"
 msgstr "Ir al carrito"
 
-#: src/app/[lang]/_components/TabBar.tsx:17
+#: src/app/[lang]/_components/AuthTabButton.tsx:31
+#: src/app/[lang]/_components/AuthTabButton.tsx:43
+msgid "Go to Create Account"
+msgstr "Ir a crear cuenta"
+
+#: src/app/[lang]/_components/TabBar.tsx:19
 msgid "Go to Home"
 msgstr "Ir a inicio"
+
+#: src/app/[lang]/_components/AuthTabButton.tsx:22
+#: src/app/[lang]/_components/AuthMenu.tsx:26
+msgid "Got to Account"
+msgstr "Ir a cuenta"
+
+#: src/helpers/errors.ts:16
+msgid "Invalid email or password"
+msgstr "Email o contraseña inválidos"
+
+#: src/helpers/errors.ts:12
+msgid "Invalid form data"
+msgstr "Información inválida"
 
 #: src/app/[lang]/style-guide/page.tsx:27
 msgid "Label"
@@ -84,7 +153,22 @@ msgstr "Botón de enlace"
 
 #: src/app/[lang]/style-guide/page.tsx:75
 msgid "Link Link"
-msgstr "Enlace de enlace"
+msgstr "Enlace"
+
+#: src/app/[lang]/(auth)/login/page.tsx:20
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:35
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:79
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:108
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: src/app/[lang]/account/_components/LogoutForm.tsx:26
+msgid "Logout"
+msgstr "Terminar sesión"
+
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:47
+msgid "Name"
+msgstr "Nombre"
 
 #: src/app/[lang]/style-guide/page.tsx:30
 #: src/app/[lang]/style-guide/page.tsx:43
@@ -95,22 +179,48 @@ msgstr "Botón de contorno"
 msgid "Outline Link"
 msgstr "Enlace de contorno"
 
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:62
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:84
+msgid "Password"
+msgstr "Contraseña"
+
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"
 msgstr "Título"
 
 #: src/app/[lang]/style-guide/page.tsx:21
 msgid "Title Large"
-msgstr "Título grande"
+msgstr "Titulo grande"
 
 #: src/app/[lang]/style-guide/page.tsx:23
 msgid "Title Small"
 msgstr "Titulo pequeño"
 
-#: src/app/[lang]/_components/Header.tsx:52
+#: src/helpers/errors.ts:14
+msgid "User has invalid data"
+msgstr "Usuario tiene datos inválidos"
+
+#: src/app/[lang]/_components/Header.tsx:54
 msgid "View Cart"
 msgstr "Ver carrito"
 
-#: src/app/[lang]/_components/Header.tsx:39
+#: src/app/[lang]/account/page.tsx:29
+msgid "Welcome,"
+msgstr "Bienvenido,"
+
+#: src/app/[lang]/_components/Header.tsx:41
 msgid "What are you hungry for?"
 msgstr "¿Qué deseas comer?"
+
+#: src/helpers/errors.ts:20
+msgid "You must be logged in to access this content"
+msgstr "Debes iniciar sesión para acceder a este contenido"
+
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:49
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:71
+msgid "you@example.com"
+msgstr "tú@ejemplo.com"
+
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:53
+msgid "Your Name"
+msgstr "Tu Nombre"
