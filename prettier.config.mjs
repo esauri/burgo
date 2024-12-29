@@ -1,6 +1,6 @@
 /** @type {import("prettier").Config} */
 const config = {
-  importOrder: ["<THIRD_PARTY_MODULES>", "^~.*$", "^[./]"],
+  importOrder: ["server-only", "<THIRD_PARTY_MODULES>", "^~.*$", "^[./]"],
   importOrderSortSpecifiers: true,
   trailingComma: "all",
   plugins: [
