@@ -38,9 +38,6 @@ msgid "Body Small"
 msgstr "Letra pequeña"
 
 #: src/app/[lang]/layout.tsx:59
-msgid "Burger App"
-msgstr "App de Hamburguesas"
-
 #: src/app/[lang]/_components/Header.tsx:26
 msgid "Burgo"
 msgstr "Burgo"

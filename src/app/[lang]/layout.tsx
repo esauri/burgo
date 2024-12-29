@@ -56,7 +56,7 @@ export async function generateMetadata(props: Props) {
   const i18n = getI18nInstance(lang);
 
   return {
-    title: t(i18n)`Burger App`,
+    title: t(i18n)`Burgo`,
     description: t(i18n)`Custom built hamburgers`,
     icons: {
       apple: "/assets/icons/apple-touch-icon.png",
