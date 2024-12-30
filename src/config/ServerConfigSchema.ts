@@ -5,6 +5,7 @@ import { z } from "zod";
  * built with invalid env vars.
  */
 export const ServerConfigSchema = z.object({
+  PRODUCTS_API_URL: z.string(),
   SUPABASE_ANON_KEY: z.string(),
   SUPABASE_URL: z.string(),
 });

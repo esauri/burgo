@@ -13,9 +13,21 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/app/[lang]/layout.tsx:82
+msgid "'%s | Burgo"
+msgstr "'%s | Burgo"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:56
+msgid "{calorie} Calories"
+msgstr "{calorie} Calorías"
+
 #: src/app/[lang]/account/page.tsx:26
 msgid "Account"
 msgstr "Cuenta"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:81
+msgid "Add To Cart"
+msgstr "Añadir al carrito"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:106
 msgid "Already have an account?"
@@ -37,14 +49,14 @@ msgstr "Letra grande"
 msgid "Body Small"
 msgstr "Letra pequeña"
 
-#: src/app/[lang]/layout.tsx:59
+#: src/app/[lang]/layout.tsx:81
 #: src/app/[lang]/_components/Header.tsx:26
 msgid "Burgo"
 msgstr "Burgo"
 
-#: src/app/[lang]/page.tsx:18
-msgid "Burgo Hamburgers"
-msgstr "Hamburguesas Burgo"
+#: src/app/[lang]/page.tsx:23
+msgid "Burgo Menu"
+msgstr "Menú de Burgo"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:102
 msgid "Create"
@@ -56,7 +68,7 @@ msgstr "Crear"
 msgid "Create Account"
 msgstr "Crear cuenta"
 
-#: src/app/[lang]/layout.tsx:60
+#: src/app/[lang]/layout.tsx:73
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
 
@@ -131,6 +143,11 @@ msgstr "Ir a inicio"
 msgid "Got to Account"
 msgstr "Ir a cuenta"
 
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:68
+#: src/app/[lang]/_components/ProductCard.tsx:29
+msgid "Image of {name}"
+msgstr "Imagén de {name}"
+
 #: src/helpers/errors.ts:16
 msgid "Invalid email or password"
 msgstr "Email o contraseña inválidos"
@@ -167,6 +184,10 @@ msgstr "Terminar sesión"
 msgid "Name"
 msgstr "Nombre"
 
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:51
+msgid "Nutrition"
+msgstr "Nutrición"
+
 #: src/app/[lang]/style-guide/page.tsx:30
 #: src/app/[lang]/style-guide/page.tsx:43
 msgid "Outline Button"
@@ -180,6 +201,22 @@ msgstr "Enlace de contorno"
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:84
 msgid "Password"
 msgstr "Contraseña"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:37
+msgid "Price"
+msgstr "Precio"
+
+#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:32
+msgid "Product information"
+msgstr "Información del producto"
+
+#: src/helpers/errors.ts:22
+msgid "Product not found"
+msgstr "Producto no se encontró"
+
+#: src/app/[lang]/products/[productId]/_components/Header.tsx:17
+msgid "Products"
+msgstr "Productos"
 
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"

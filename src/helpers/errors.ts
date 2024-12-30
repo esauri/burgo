@@ -18,6 +18,8 @@ export function getErrorMessageFromCode(code: ErrorCode) {
       return msg`Failed to log out`;
     case ERROR_CODE.NOT_AUTHENTICATED:
       return msg`You must be logged in to access this content`;
+    case ERROR_CODE.PRODUCT_NOT_FOUND:
+      return msg`Product not found`;
   }
 }
 
@@ -64,5 +66,11 @@ export class LoginError extends InternalError {
 export class LogoutError extends InternalError {
   constructor(message = "Failed to log out") {
     super(message, ERROR_CODE.LOGOUT_ERROR);
+  }
+}
+
+export class ProductNotFoundError extends InternalError {
+  constructor(message = "Product not found") {
+    super(message, ERROR_CODE.PRODUCT_NOT_FOUND);
   }
 }
