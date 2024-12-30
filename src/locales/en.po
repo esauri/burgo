@@ -50,13 +50,17 @@ msgid "Body Small"
 msgstr "Body Small"
 
 #: src/app/[lang]/layout.tsx:81
-#: src/app/[lang]/_components/Header.tsx:26
+#: src/app/[lang]/_components/Header.tsx:25
 msgid "Burgo"
 msgstr "Burgo"
 
-#: src/app/[lang]/page.tsx:23
+#: src/app/[lang]/page.tsx:44
 msgid "Burgo Menu"
 msgstr "Burgo Menu"
+
+#: src/app/[lang]/_components/SearchForm.tsx:118
+msgid "Clear search"
+msgstr "Clear search"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:102
 msgid "Create"
@@ -184,6 +188,10 @@ msgstr "Logout"
 msgid "Name"
 msgstr "Name"
 
+#: src/app/[lang]/page.tsx:78
+msgid "No products available"
+msgstr "No products available"
+
 #: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:51
 msgid "Nutrition"
 msgstr "Nutrition"
@@ -218,6 +226,10 @@ msgstr "Product not found"
 msgid "Products"
 msgstr "Products"
 
+#: src/app/[lang]/page.tsx:60
+msgid "Products not found"
+msgstr "Products not found"
+
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"
 msgstr "Title"
@@ -234,15 +246,24 @@ msgstr "Title Small"
 msgid "User has invalid data"
 msgstr "User has invalid data"
 
-#: src/app/[lang]/_components/Header.tsx:54
+#: src/app/[lang]/page.tsx:72
+msgid "View all products"
+msgstr "View all products"
+
+#: src/app/[lang]/_components/Header.tsx:48
 msgid "View Cart"
 msgstr "View Cart"
+
+#: src/app/[lang]/page.tsx:66
+msgid "We were unable to find any products that matched your search."
+msgstr "We were unable to find any products that matched your search."
 
 #: src/app/[lang]/account/page.tsx:29
 msgid "Welcome,"
 msgstr "Welcome,"
 
-#: src/app/[lang]/_components/Header.tsx:41
+#: src/app/[lang]/_components/SearchForm.tsx:103
+#: src/app/[lang]/_components/SearchForm.tsx:137
 msgid "What are you hungry for?"
 msgstr "What are you hungry for?"
 

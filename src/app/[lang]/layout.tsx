@@ -92,7 +92,7 @@ export default async function RootLayout(props: Props) {
 
   return (
     <html className={geistSans.variable} dir="ltr" lang={lang}>
-      <body className="bg-background text-foreground antialiased max-lg:pb-15">
+      <body className="bg-background text-foreground antialiased max-lg:pb-24">
         <I18nProvider locale={lang} messages={i18n.messages}>
           <Header
             authItem={
