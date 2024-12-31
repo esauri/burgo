@@ -9,7 +9,7 @@ type Props = {
   href: string;
 };
 
-export function TabButton({ children, href }: Props) {
+export function Tab({ children, href }: Props) {
   const pathname = usePathname();
   const isSelected = pathname === href;
 

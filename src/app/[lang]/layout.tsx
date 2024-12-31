@@ -7,12 +7,15 @@ import { config } from "~/config/server";
 import { DEFAULT_LOCALE, LOCALES } from "~/constants/i18n";
 import type { Language } from "~/types/Language";
 import { getUser } from "~/usecases/auth";
+import { getCart } from "~/usecases/cart";
 import { getI18nInstance, initializeI18n } from "~/usecases/i18n";
-import { AuthMenu, AuthMenuFallback } from "./_components/AuthMenu";
 import {
-  AuthTabButton,
-  AuthTabButtonFallback,
-} from "./_components/AuthTabButton";
+  AuthHeaderLink,
+  AuthHeaderLinkFallback,
+  AuthTab,
+  AuthTabFallback,
+} from "./_components/AuthNavLink";
+import { CartHeaderLink, CartTab } from "./_components/CartNavLink";
 import { Header } from "./_components/Header";
 import { I18nProvider } from "./_components/I18nProvider";
 import { TabBar } from "./_components/TabBar";
@@ -87,6 +90,7 @@ export async function generateMetadata(props: Props) {
 export default async function RootLayout(props: Props) {
   const { lang } = await props.params;
   const authPromise = getUser();
+  const cartPromise = getCart();
   const i18n = initializeI18n(lang);
   const { children } = props;
 
@@ -95,19 +99,25 @@ export default async function RootLayout(props: Props) {
       <body className="bg-background text-foreground antialiased max-lg:pb-24">
         <I18nProvider locale={lang} messages={i18n.messages}>
           <Header
-            authItem={
-              <Suspense fallback={<AuthMenuFallback />}>
-                <AuthMenu authPromise={authPromise} lang={lang} />
-              </Suspense>
-            }
             lang={lang}
+            sideContent={
+              <>
+                <CartHeaderLink cartPromise={cartPromise} lang={lang} />
+                <Suspense fallback={<AuthHeaderLinkFallback />}>
+                  <AuthHeaderLink authPromise={authPromise} lang={lang} />
+                </Suspense>
+              </>
+            }
           />
           {children}
           <TabBar
-            authItem={
-              <Suspense fallback={<AuthTabButtonFallback />}>
-                <AuthTabButton authPromise={authPromise} lang={lang} />
-              </Suspense>
+            sideContent={
+              <>
+                <CartTab cartPromise={cartPromise} lang={lang} />
+                <Suspense fallback={<AuthTabFallback />}>
+                  <AuthTab authPromise={authPromise} lang={lang} />
+                </Suspense>
+              </>
             }
             lang={lang}
           />

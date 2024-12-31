@@ -5,4 +5,4 @@ export const DEFAULT_LOCALE = "en" as const;
 
 export const LOCALES: Language[] = linguiConfig.locales;
 
-export const PREFERRED_LOCALE_COOKIE = "locale";
+export const PREFERRED_LOCALE_COOKIE = "_burgo_locale";

@@ -13,11 +13,11 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/[lang]/layout.tsx:82
+#: src/app/[lang]/layout.tsx:85
 msgid "'%s | Burgo"
 msgstr "'%s | Burgo"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:56
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:46
 msgid "{calorie} Calories"
 msgstr "{calorie} Calories"
 
@@ -25,9 +25,13 @@ msgstr "{calorie} Calories"
 msgid "Account"
 msgstr "Account"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:81
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:65
 msgid "Add To Cart"
 msgstr "Add To Cart"
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:35
+msgid "Added {productName} to cart"
+msgstr "Added {productName} to cart"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:106
 msgid "Already have an account?"
@@ -49,8 +53,8 @@ msgstr "Body Large"
 msgid "Body Small"
 msgstr "Body Small"
 
-#: src/app/[lang]/layout.tsx:81
-#: src/app/[lang]/_components/Header.tsx:25
+#: src/app/[lang]/layout.tsx:84
+#: src/app/[lang]/_components/Header.tsx:24
 msgid "Burgo"
 msgstr "Burgo"
 
@@ -72,9 +76,13 @@ msgstr "Create"
 msgid "Create Account"
 msgstr "Create Account"
 
-#: src/app/[lang]/layout.tsx:73
+#: src/app/[lang]/layout.tsx:76
 msgid "Custom built hamburgers"
 msgstr "Custom built hamburgers"
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:101
+msgid "Decrease quantity by 1"
+msgstr "Decrease quantity by 1"
 
 #: src/app/[lang]/style-guide/page.tsx:32
 #: src/app/[lang]/style-guide/page.tsx:49
@@ -102,7 +110,7 @@ msgstr "Enter your email and set a password to get started"
 msgid "Failed to create account"
 msgstr "Failed to create account"
 
-#: src/helpers/errors.ts:18
+#: src/helpers/errors.ts:20
 msgid "Failed to log out"
 msgstr "Failed to log out"
 
@@ -115,8 +123,8 @@ msgstr "Filled Button"
 msgid "Filled Link"
 msgstr "Filled Link"
 
-#: src/app/[lang]/_components/AuthMenu.tsx:39
-#: src/app/[lang]/_components/AuthMenu.tsx:48
+#: src/app/[lang]/_components/AuthNavLink.tsx:40
+#: src/app/[lang]/_components/AuthNavLink.tsx:49
 msgid "Get Started"
 msgstr "Get Started"
 
@@ -129,36 +137,48 @@ msgstr "Ghost Button"
 msgid "Ghost Link"
 msgstr "Ghost Link"
 
-#: src/app/[lang]/_components/TabBar.tsx:31
+#: src/app/[lang]/_components/CartNavLink.tsx:39
 msgid "Go to Cart"
 msgstr "Go to Cart"
 
-#: src/app/[lang]/_components/AuthTabButton.tsx:31
-#: src/app/[lang]/_components/AuthTabButton.tsx:43
+#: src/app/[lang]/_components/AuthNavLink.tsx:72
+#: src/app/[lang]/_components/AuthNavLink.tsx:84
 msgid "Go to Create Account"
 msgstr "Go to Create Account"
 
-#: src/app/[lang]/_components/TabBar.tsx:19
+#: src/app/[lang]/_components/TabBar.tsx:18
 msgid "Go to Home"
 msgstr "Go to Home"
 
-#: src/app/[lang]/_components/AuthTabButton.tsx:22
-#: src/app/[lang]/_components/AuthMenu.tsx:26
+#: src/app/[lang]/_components/AuthNavLink.tsx:27
+#: src/app/[lang]/_components/AuthNavLink.tsx:63
 msgid "Got to Account"
 msgstr "Got to Account"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:68
-#: src/app/[lang]/_components/ProductCard.tsx:29
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:113
+msgid "How many?"
+msgstr "How many?"
+
+#: src/app/[lang]/products/[productId]/page.tsx:53
+#: src/app/[lang]/_components/ProductCard.tsx:33
 msgid "Image of {name}"
 msgstr "Image of {name}"
 
-#: src/helpers/errors.ts:16
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:120
+msgid "Increase quantity by 1"
+msgstr "Increase quantity by 1"
+
+#: src/helpers/errors.ts:18
 msgid "Invalid email or password"
 msgstr "Invalid email or password"
 
 #: src/helpers/errors.ts:12
 msgid "Invalid form data"
 msgstr "Invalid form data"
+
+#: src/app/[lang]/_components/CartNavLink.tsx:74
+msgid "Items in cart:"
+msgstr "Items in cart:"
 
 #: src/app/[lang]/style-guide/page.tsx:27
 msgid "Label"
@@ -192,7 +212,7 @@ msgstr "Name"
 msgid "No products available"
 msgstr "No products available"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:51
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:41
 msgid "Nutrition"
 msgstr "Nutrition"
 
@@ -210,15 +230,19 @@ msgstr "Outline Link"
 msgid "Password"
 msgstr "Password"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:37
+#: src/helpers/errors.ts:14
+msgid "Please select a valid quantity"
+msgstr "Please select a valid quantity"
+
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:27
 msgid "Price"
 msgstr "Price"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:32
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:22
 msgid "Product information"
 msgstr "Product information"
 
-#: src/helpers/errors.ts:22
+#: src/helpers/errors.ts:24
 msgid "Product not found"
 msgstr "Product not found"
 
@@ -229,6 +253,10 @@ msgstr "Products"
 #: src/app/[lang]/page.tsx:60
 msgid "Products not found"
 msgstr "Products not found"
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:44
+msgid "Quantity"
+msgstr "Quantity"
 
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"
@@ -242,7 +270,11 @@ msgstr "Title Large"
 msgid "Title Small"
 msgstr "Title Small"
 
-#: src/helpers/errors.ts:14
+#: src/helpers/errors.ts:26
+msgid "Unable to update cart"
+msgstr "Unable to update cart"
+
+#: src/helpers/errors.ts:16
 msgid "User has invalid data"
 msgstr "User has invalid data"
 
@@ -250,7 +282,7 @@ msgstr "User has invalid data"
 msgid "View all products"
 msgstr "View all products"
 
-#: src/app/[lang]/_components/Header.tsx:48
+#: src/app/[lang]/_components/CartNavLink.tsx:24
 msgid "View Cart"
 msgstr "View Cart"
 
@@ -267,7 +299,7 @@ msgstr "Welcome,"
 msgid "What are you hungry for?"
 msgstr "What are you hungry for?"
 
-#: src/helpers/errors.ts:20
+#: src/helpers/errors.ts:22
 msgid "You must be logged in to access this content"
 msgstr "You must be logged in to access this content"
 

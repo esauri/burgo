@@ -24,7 +24,11 @@ export function ProductCard({ lang, prioritizeThumbnail, product }: Props) {
   const href = `/${lang}/products/${id}/${slug}`;
 
   return (
-    <PressableCardContainer className="group/card cursor-pointer" href={href}>
+    <PressableCardContainer
+      className="group/card cursor-pointer"
+      href={href}
+      title={name}
+    >
       <Card.Thumbnail
         alt={i18n._(msg`Image of ${name}`)}
         className="transition-transform group-hover/card:scale-110"

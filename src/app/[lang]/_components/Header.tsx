@@ -1,5 +1,4 @@
 import { Trans } from "@lingui/react/macro";
-import { ShoppingCartIcon } from "lucide-react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { type ReactNode, Suspense } from "react";
@@ -7,11 +6,11 @@ import { Language } from "~/types/Language";
 import { SearchForm, SearchFormFallback } from "./SearchForm";
 
 type Props = {
-  authItem: ReactNode;
   lang: Language;
+  sideContent: ReactNode;
 };
 
-export function Header({ authItem, lang }: Props) {
+export function Header({ lang, sideContent }: Props) {
   return (
     <header className="bg-card text-card-foreground py-4">
       <nav className="container grid grid-cols-3 items-center justify-between gap-4">
@@ -39,17 +38,7 @@ export function Header({ authItem, lang }: Props) {
           </Suspense>
         </div>
         <div className="hidden place-content-end items-center gap-3 lg:flex">
-          {/* Cart */}
-          <NextLink
-            className="focus-visible:ring-muted hover:bg-muted/20 rounded-full p-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none active:scale-95"
-            href="#0"
-          >
-            <span className="sr-only">
-              <Trans>View Cart</Trans>
-            </span>
-            <ShoppingCartIcon className="size-6" />
-          </NextLink>
-          {authItem}
+          {sideContent}
         </div>
       </nav>
     </header>

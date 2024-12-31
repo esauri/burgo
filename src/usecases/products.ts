@@ -3,12 +3,12 @@ import { cache } from "react";
 import { z } from "zod";
 import { config } from "~/config/server";
 import { ProductNotFoundError } from "~/helpers/errors";
-import { filterByArraySchema } from "~/helpers/zod";
+import { filterBySchema } from "~/helpers/zod";
 import { type Product, ProductSchema } from "~/types/Product";
 
 const { PRODUCTS_API_URL } = config;
 
-const parseProducts = filterByArraySchema<Product>(ProductSchema);
+const parseProducts = filterBySchema<Product>(ProductSchema);
 
 const ProductsRequestSchema = z.object({
   products: z

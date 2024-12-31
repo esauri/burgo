@@ -13,11 +13,11 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/[lang]/layout.tsx:82
+#: src/app/[lang]/layout.tsx:85
 msgid "'%s | Burgo"
 msgstr "'%s | Burgo"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:56
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:46
 msgid "{calorie} Calories"
 msgstr "{calorie} Calorías"
 
@@ -25,9 +25,13 @@ msgstr "{calorie} Calorías"
 msgid "Account"
 msgstr "Cuenta"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:81
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:65
 msgid "Add To Cart"
 msgstr "Añadir al carrito"
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:35
+msgid "Added {productName} to cart"
+msgstr "Se añadió {productName} al carrito"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:106
 msgid "Already have an account?"
@@ -49,14 +53,14 @@ msgstr "Letra grande"
 msgid "Body Small"
 msgstr "Letra pequeña"
 
-#: src/app/[lang]/layout.tsx:81
-#: src/app/[lang]/_components/Header.tsx:25
+#: src/app/[lang]/layout.tsx:84
+#: src/app/[lang]/_components/Header.tsx:24
 msgid "Burgo"
 msgstr "Burgo"
 
 #: src/app/[lang]/page.tsx:44
 msgid "Burgo Menu"
-msgstr "Menú de Burgo"
+msgstr ""
 
 #: src/app/[lang]/_components/SearchForm.tsx:118
 msgid "Clear search"
@@ -72,9 +76,13 @@ msgstr "Crear"
 msgid "Create Account"
 msgstr "Crear cuenta"
 
-#: src/app/[lang]/layout.tsx:73
+#: src/app/[lang]/layout.tsx:76
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:101
+msgid "Decrease quantity by 1"
+msgstr "Disminuir cantidad por 1"
 
 #: src/app/[lang]/style-guide/page.tsx:32
 #: src/app/[lang]/style-guide/page.tsx:49
@@ -102,7 +110,7 @@ msgstr "Entra tu email y establece una contraseña para comenzar"
 msgid "Failed to create account"
 msgstr "Fallo al crear cuenta"
 
-#: src/helpers/errors.ts:18
+#: src/helpers/errors.ts:20
 msgid "Failed to log out"
 msgstr "Fallo al cerrar sesión"
 
@@ -115,8 +123,8 @@ msgstr "Botón relleno"
 msgid "Filled Link"
 msgstr "Enlace relleno"
 
-#: src/app/[lang]/_components/AuthMenu.tsx:39
-#: src/app/[lang]/_components/AuthMenu.tsx:48
+#: src/app/[lang]/_components/AuthNavLink.tsx:40
+#: src/app/[lang]/_components/AuthNavLink.tsx:49
 msgid "Get Started"
 msgstr "Empezar"
 
@@ -129,36 +137,48 @@ msgstr "Botón fantasma"
 msgid "Ghost Link"
 msgstr "Enlace fantasma"
 
-#: src/app/[lang]/_components/TabBar.tsx:31
+#: src/app/[lang]/_components/CartNavLink.tsx:39
 msgid "Go to Cart"
 msgstr "Ir al carrito"
 
-#: src/app/[lang]/_components/AuthTabButton.tsx:31
-#: src/app/[lang]/_components/AuthTabButton.tsx:43
+#: src/app/[lang]/_components/AuthNavLink.tsx:72
+#: src/app/[lang]/_components/AuthNavLink.tsx:84
 msgid "Go to Create Account"
 msgstr "Ir a crear cuenta"
 
-#: src/app/[lang]/_components/TabBar.tsx:19
+#: src/app/[lang]/_components/TabBar.tsx:18
 msgid "Go to Home"
 msgstr "Ir a inicio"
 
-#: src/app/[lang]/_components/AuthTabButton.tsx:22
-#: src/app/[lang]/_components/AuthMenu.tsx:26
+#: src/app/[lang]/_components/AuthNavLink.tsx:27
+#: src/app/[lang]/_components/AuthNavLink.tsx:63
 msgid "Got to Account"
 msgstr "Ir a cuenta"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:68
-#: src/app/[lang]/_components/ProductCard.tsx:29
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:113
+msgid "How many?"
+msgstr "¿Cuántos?"
+
+#: src/app/[lang]/products/[productId]/page.tsx:53
+#: src/app/[lang]/_components/ProductCard.tsx:33
 msgid "Image of {name}"
 msgstr "Imagén de {name}"
 
-#: src/helpers/errors.ts:16
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:120
+msgid "Increase quantity by 1"
+msgstr "Incrementar cantidad por 1"
+
+#: src/helpers/errors.ts:18
 msgid "Invalid email or password"
 msgstr "Email o contraseña inválidos"
 
 #: src/helpers/errors.ts:12
 msgid "Invalid form data"
 msgstr "Información inválida"
+
+#: src/app/[lang]/_components/CartNavLink.tsx:74
+msgid "Items in cart:"
+msgstr "Elementos en el carrito:"
 
 #: src/app/[lang]/style-guide/page.tsx:27
 msgid "Label"
@@ -190,9 +210,9 @@ msgstr "Nombre"
 
 #: src/app/[lang]/page.tsx:78
 msgid "No products available"
-msgstr "Productos no disponibles"
+msgstr ""
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:51
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:41
 msgid "Nutrition"
 msgstr "Nutrición"
 
@@ -210,15 +230,19 @@ msgstr "Enlace de contorno"
 msgid "Password"
 msgstr "Contraseña"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:37
+#: src/helpers/errors.ts:14
+msgid "Please select a valid quantity"
+msgstr "Por favor selecciona una cantidad válida"
+
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:27
 msgid "Price"
 msgstr "Precio"
 
-#: src/app/[lang]/products/[productId]/_components/ProductDetail.tsx:32
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:22
 msgid "Product information"
 msgstr "Información del producto"
 
-#: src/helpers/errors.ts:22
+#: src/helpers/errors.ts:24
 msgid "Product not found"
 msgstr "Producto no se encontró"
 
@@ -228,7 +252,11 @@ msgstr "Productos"
 
 #: src/app/[lang]/page.tsx:60
 msgid "Products not found"
-msgstr "No se encontraron productos"
+msgstr ""
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:44
+msgid "Quantity"
+msgstr "Cantidad"
 
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"
@@ -242,21 +270,25 @@ msgstr "Titulo grande"
 msgid "Title Small"
 msgstr "Titulo pequeño"
 
-#: src/helpers/errors.ts:14
+#: src/helpers/errors.ts:26
+msgid "Unable to update cart"
+msgstr "No se pudo actualizar el carrito"
+
+#: src/helpers/errors.ts:16
 msgid "User has invalid data"
 msgstr "Usuario tiene datos inválidos"
 
 #: src/app/[lang]/page.tsx:72
 msgid "View all products"
-msgstr "Ver todos los productos"
+msgstr ""
 
-#: src/app/[lang]/_components/Header.tsx:48
+#: src/app/[lang]/_components/CartNavLink.tsx:24
 msgid "View Cart"
 msgstr "Ver carrito"
 
 #: src/app/[lang]/page.tsx:66
 msgid "We were unable to find any products that matched your search."
-msgstr "No se encontraron productos que coincidan con su búsqueda."
+msgstr ""
 
 #: src/app/[lang]/account/page.tsx:29
 msgid "Welcome,"
@@ -267,7 +299,7 @@ msgstr "Bienvenido,"
 msgid "What are you hungry for?"
 msgstr "¿Qué deseas comer?"
 
-#: src/helpers/errors.ts:20
+#: src/helpers/errors.ts:22
 msgid "You must be logged in to access this content"
 msgstr "Debes iniciar sesión para acceder a este contenido"
 

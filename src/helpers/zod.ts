@@ -17,7 +17,7 @@ export function getFieldErrorMessageFromZodError<
  * ```
  * @returns
  */
-function filterBySchema<TData>(schema: z.ZodSchema<TData>) {
+export function filterBySchema<TData>(schema: z.ZodSchema<TData>) {
   return function (items: unknown[]) {
     return items.reduce((parsedItems: TData[], currentItem: unknown) => {
       const parsedItem = schema.safeParse(currentItem);

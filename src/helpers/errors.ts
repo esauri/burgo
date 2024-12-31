@@ -10,6 +10,8 @@ export function getErrorMessageFromCode(code: ErrorCode) {
       return msg`Failed to create account`;
     case ERROR_CODE.INVALID_FORM_DATA:
       return msg`Invalid form data`;
+    case ERROR_CODE.INVALID_QUANTITY:
+      return msg`Please select a valid quantity`;
     case ERROR_CODE.INVALID_USER:
       return msg`User has invalid data`;
     case ERROR_CODE.LOGIN_ERROR:
@@ -20,6 +22,8 @@ export function getErrorMessageFromCode(code: ErrorCode) {
       return msg`You must be logged in to access this content`;
     case ERROR_CODE.PRODUCT_NOT_FOUND:
       return msg`Product not found`;
+    case ERROR_CODE.SET_CART_ERROR:
+      return msg`Unable to update cart`;
   }
 }
 
@@ -51,6 +55,12 @@ export class InvalidFormDataError extends InternalError {
   }
 }
 
+export class InvalidQuantityError extends InternalError {
+  constructor(message = "Please select a valid quantity") {
+    super(message, ERROR_CODE.INVALID_QUANTITY);
+  }
+}
+
 export class InvalidUserError extends InternalError {
   constructor(message = "User has invalid data") {
     super(message, ERROR_CODE.INVALID_USER);
@@ -72,5 +82,11 @@ export class LogoutError extends InternalError {
 export class ProductNotFoundError extends InternalError {
   constructor(message = "Product not found") {
     super(message, ERROR_CODE.PRODUCT_NOT_FOUND);
+  }
+}
+
+export class SetCartError extends InternalError {
+  constructor(message = "Unable to update cart") {
+    super(message, ERROR_CODE.SET_CART_ERROR);
   }
 }
