@@ -30,22 +30,18 @@ export async function AuthHeaderLink({ authPromise, lang }: Props) {
       </NextLink>
     );
   } catch {
-    return (
-      <Text
-        as={NextLink}
-        variant="body-lg"
-        className="focus-visible:ring-muted hover:bg-muted/20 rounded-sm px-3 py-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none active:scale-95"
-        href={`/${lang}/create-account`}
-      >
-        <Trans>Get Started</Trans>
-      </Text>
-    );
+    return <AuthHeaderLinkFallback lang={lang} />;
   }
 }
 
-export function AuthHeaderLinkFallback() {
+export function AuthHeaderLinkFallback({ lang }: Pick<Props, "lang">) {
   return (
-    <Text variant="body-lg" className="px-3 py-2">
+    <Text
+      as={NextLink}
+      variant="body-lg"
+      className="focus-visible:ring-muted hover:bg-muted/20 rounded-sm px-3 py-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none active:scale-95"
+      href={`/${lang}/create-account`}
+    >
       <Trans>Get Started</Trans>
     </Text>
   );
@@ -66,20 +62,13 @@ export async function AuthTab({ authPromise, lang }: Props) {
       </Tab>
     );
   } catch {
-    return (
-      <Tab href={`/${lang}/create-account`}>
-        <span className="sr-only">
-          <Trans>Go to Create Account</Trans>
-        </span>
-        <UserIcon className="size-6 active:scale-90" />
-      </Tab>
-    );
+    return <AuthTabFallback lang={lang} />;
   }
 }
 
-export function AuthTabFallback() {
+export function AuthTabFallback({ lang }: Pick<Props, "lang">) {
   return (
-    <Tab href="#0">
+    <Tab href={`/${lang}/create-account`}>
       <span className="sr-only">
         <Trans>Go to Create Account</Trans>
       </span>

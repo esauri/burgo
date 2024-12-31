@@ -18,7 +18,7 @@ export function CartHeaderLink({ cartPromise }: Props) {
     <div className="relative flex active:scale-95">
       <NextLink
         className="focus-visible:ring-muted hover:bg-muted/20 rounded-full p-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
-        href="#0"
+        href="/cart"
       >
         <span className="sr-only">
           <Trans>View Cart</Trans>
@@ -34,7 +34,7 @@ export function CartHeaderLink({ cartPromise }: Props) {
 
 export function CartTab({ cartPromise }: Props) {
   return (
-    <Tab href="#0">
+    <Tab href="/cart">
       <span className="sr-only">
         <Trans>Go to Cart</Trans>
       </span>

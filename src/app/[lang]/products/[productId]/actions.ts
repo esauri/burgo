@@ -14,8 +14,8 @@ type AddToCartFormState =
       status: Extract<FormStateStatus, "INITIAL">;
     }
   | {
-      message: string;
       errorCode: ErrorCode;
+      message: string;
       status: Extract<FormStateStatus, "ERROR">;
     }
   | {

@@ -62,7 +62,11 @@ export default async function ProductDetailPage(props: Props) {
 
           {/* Form */}
           <aside className="mt-4 lg:col-start-1 lg:row-start-2 lg:mt-10 lg:max-w-lg lg:self-start">
-            <AddToCartForm productId={product.id} productName={product.name} />
+            <AddToCartForm
+              lang={lang}
+              productId={product.id}
+              productName={product.name}
+            />
           </aside>
         </article>
       </MainContent>

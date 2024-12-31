@@ -25,11 +25,11 @@ msgstr "{calorie} Calorías"
 msgid "Account"
 msgstr "Cuenta"
 
-#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:65
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:74
 msgid "Add To Cart"
 msgstr "Añadir al carrito"
 
-#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:35
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:39
 msgid "Added {productName} to cart"
 msgstr "Se añadió {productName} al carrito"
 
@@ -62,9 +62,17 @@ msgstr "Burgo"
 msgid "Burgo Menu"
 msgstr "Menú de Burgo"
 
+#: src/app/[lang]/cart/_components/CartForm.tsx:120
+msgid "Clear Cart"
+msgstr "Eliminar carrito"
+
 #: src/app/[lang]/_components/SearchForm.tsx:118
 msgid "Clear search"
 msgstr "Eliminar búsqueda"
+
+#: src/app/[lang]/cart/_components/CartForm.tsx:244
+msgid "Continue Shopping"
+msgstr "Seguir comprando"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:102
 msgid "Create"
@@ -80,9 +88,15 @@ msgstr "Crear cuenta"
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
 
-#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:101
-msgid "Decrease quantity by 1"
-msgstr "Disminuir cantidad por 1"
+#: src/app/[lang]/cart/_components/CartForm.tsx:191
+#: src/app/[lang]/cart/_components/CartForm.tsx:194
+msgid "Decrement quantity of {name} to {quantityAfterDecrement}"
+msgstr "Decrementar cantidad de {name} a {quantityAfterDecrement}"
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:113
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:116
+msgid "Decrement quantity to {quantityAfterDecrement}"
+msgstr "Decrementar cantidad a {quantityAfterDecrement}"
 
 #: src/app/[lang]/style-guide/page.tsx:32
 #: src/app/[lang]/style-guide/page.tsx:49
@@ -123,8 +137,7 @@ msgstr "Botón relleno"
 msgid "Filled Link"
 msgstr "Enlace relleno"
 
-#: src/app/[lang]/_components/AuthNavLink.tsx:40
-#: src/app/[lang]/_components/AuthNavLink.tsx:49
+#: src/app/[lang]/_components/AuthNavLink.tsx:45
 msgid "Get Started"
 msgstr "Empezar"
 
@@ -141,8 +154,7 @@ msgstr "Enlace fantasma"
 msgid "Go to Cart"
 msgstr "Ir al carrito"
 
-#: src/app/[lang]/_components/AuthNavLink.tsx:72
-#: src/app/[lang]/_components/AuthNavLink.tsx:84
+#: src/app/[lang]/_components/AuthNavLink.tsx:73
 msgid "Go to Create Account"
 msgstr "Ir a crear cuenta"
 
@@ -151,22 +163,29 @@ msgid "Go to Home"
 msgstr "Ir a inicio"
 
 #: src/app/[lang]/_components/AuthNavLink.tsx:27
-#: src/app/[lang]/_components/AuthNavLink.tsx:63
+#: src/app/[lang]/_components/AuthNavLink.tsx:59
 msgid "Got to Account"
 msgstr "Ir a cuenta"
 
-#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:113
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:125
 msgid "How many?"
 msgstr "¿Cuántos?"
 
 #: src/app/[lang]/products/[productId]/page.tsx:53
+#: src/app/[lang]/cart/_components/CartForm.tsx:167
 #: src/app/[lang]/_components/ProductCard.tsx:33
 msgid "Image of {name}"
 msgstr "Imagén de {name}"
 
-#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:120
-msgid "Increase quantity by 1"
-msgstr "Incrementar cantidad por 1"
+#: src/app/[lang]/cart/_components/CartForm.tsx:208
+#: src/app/[lang]/cart/_components/CartForm.tsx:210
+msgid "Increment quantity of {name} to {quantityAfterIncrement}"
+msgstr "Incrementar cantidad de {name} a {quantityAfterIncrement}"
+
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:132
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:135
+msgid "Increment quantity to {quantityAfterIncrement}"
+msgstr "Incrementar cantidad a {quantityAfterIncrement}"
 
 #: src/helpers/errors.ts:18
 msgid "Invalid email or password"
@@ -254,9 +273,22 @@ msgstr "Productos"
 msgid "Products not found"
 msgstr "No se encontraron productos"
 
-#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:44
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:53
 msgid "Quantity"
 msgstr "Cantidad"
+
+#: src/app/[lang]/cart/_components/CartForm.tsx:203
+msgid "Quantity:"
+msgstr "Cantidad:"
+
+#: src/app/[lang]/cart/_components/CartForm.tsx:223
+#: src/app/[lang]/cart/_components/CartForm.tsx:227
+msgid "Remove {name}"
+msgstr "Remover {name}"
+
+#: src/app/[lang]/cart/page.tsx:26
+msgid "Shopping Cart"
+msgstr "Carrito de compras"
 
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"
@@ -270,6 +302,10 @@ msgstr "Titulo grande"
 msgid "Title Small"
 msgstr "Titulo pequeño"
 
+#: src/app/[lang]/cart/_components/CartForm.tsx:132
+msgid "Total:"
+msgstr "Total:"
+
 #: src/helpers/errors.ts:26
 msgid "Unable to update cart"
 msgstr "No se pudo actualizar el carrito"
@@ -282,6 +318,7 @@ msgstr "Usuario tiene datos inválidos"
 msgid "View all products"
 msgstr "Ver todos los productos"
 
+#: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:41
 #: src/app/[lang]/_components/CartNavLink.tsx:24
 msgid "View Cart"
 msgstr "Ver carrito"
@@ -307,6 +344,14 @@ msgstr "Debes iniciar sesión para acceder a este contenido"
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:71
 msgid "you@example.com"
 msgstr "tú@ejemplo.com"
+
+#: src/app/[lang]/cart/_components/CartForm.tsx:240
+msgid "Your cart is empty"
+msgstr "Su carrito está vacío"
+
+#: src/app/[lang]/cart/_components/CartForm.tsx:111
+msgid "Your items"
+msgstr "Tus elementos"
 
 #: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:53
 msgid "Your Name"

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import type { Product } from "./Product";
 
 export const CartItemSchema = z.object({
   productId: z
@@ -11,3 +12,6 @@ export const CartItemSchema = z.object({
 });
 
 export type CartItem = z.infer<typeof CartItemSchema>;
+
+export type CartProduct = CartItem &
+  Pick<Product, "image" | "name" | "price" | "slug">;

@@ -28,7 +28,7 @@ const VariantBaseClassName: Record<Variant, string> = {
     "bg-primary border-primary @lg/pressable:w-fit text-primary-foreground text-base flex h-12 justify-center rounded-sm px-4 py-3",
   ghost:
     "@lg/pressable:w-fit text-primary text-base flex h-12 justify-center rounded-sm border-transparent px-4 py-3 underline",
-  icon: "bg-primary text-primary-foreground border-primary text-base flex h-12 w-12 justify-center rounded-full",
+  icon: "bg-primary text-primary-foreground p-3 h-12 w-12 border-transparent",
   link: "text-foreground inline-flex justify-center rounded-sm border-transparent underline",
   outline:
     "border-primary @lg/pressable:w-fit text-primary text-base flex h-12 justify-center rounded-sm px-4 py-3",
@@ -38,7 +38,7 @@ const VariantButtonDisabledClassName: Record<Variant, string> = {
   destructive: "disabled:border-disabled disabled:text-disabled",
   filled: "disabled:opacity-60",
   ghost: "disabled:text-disabled disabled:border-transparent",
-  icon: "disabled:bg-disabled disabled:border-disabled",
+  icon: "disabled:text-disabled-foreground disabled:bg-disabled",
   link: "disabled:text-disabled disabled:border-transparent",
   outline: "disabled:border-disabled disabled:text-disabled",
 };

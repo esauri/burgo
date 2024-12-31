@@ -2,28 +2,32 @@
 
 import { Trans, useLingui } from "@lingui/react/macro";
 import { MinusIcon, PlusIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { type ChangeEvent, useActionState, useEffect, useState } from "react";
 import { toast } from "sonner";
-import { SubmitButton } from "~/components/Pressable";
+import { Button, SubmitButton } from "~/components/Pressable";
 import { Text } from "~/components/Text";
 import { TextField } from "~/components/TextField";
 import { ERROR_CODE } from "~/constants/errors";
 import { FORM_STATE_STATUS } from "~/constants/formState";
 import { getErrorMessageFromCode } from "~/helpers/errors";
+import type { Language } from "~/types/Language";
 import { Product } from "~/types/Product";
 import { addToCartAction } from "../actions";
 
 type Props = {
+  lang: Language;
   productId: Product["id"];
   productName: Product["name"];
 };
 
-export function AddToCartForm({ productId, productName }: Props) {
+export function AddToCartForm({ lang, productId, productName }: Props) {
   const [addToCartState, addToCart, isAddToCartPending] = useActionState(
     addToCartAction,
     undefined,
   );
   const { t } = useLingui();
+  const { push } = useRouter();
 
   useEffect(() => {
     if (addToCartState && addToCartState.status === FORM_STATE_STATUS.ERROR) {
@@ -32,9 +36,14 @@ export function AddToCartForm({ productId, productName }: Props) {
       addToCartState &&
       addToCartState.status === FORM_STATE_STATUS.SUCCESS
     ) {
-      toast.success(t`Added ${productName} to cart`);
+      toast.success(t`Added ${productName} to cart`, {
+        action: {
+          label: t`View Cart`,
+          onClick: () => push(`/${lang}/cart`),
+        },
+      });
     }
-  }, [addToCartState, productName, t]);
+  }, [addToCartState, lang, productName, push, t]);
 
   return (
     <form action={addToCart}>
@@ -81,6 +90,9 @@ function Counter({ defaultValue = 1, id, min = 0, max, name }: CounterProps) {
   const { t } = useLingui();
   const [count, setCount] = useState(defaultValue);
 
+  const quantityAfterDecrement = Math.max(count - 1, 0);
+  const quantityAfterIncrement = Math.min(count + 1, max);
+
   const handleSetCount = (value: number) => {
     setCount(Math.min(Math.max(value, min), max));
   };
@@ -96,16 +108,16 @@ function Counter({ defaultValue = 1, id, min = 0, max, name }: CounterProps) {
   };
 
   return (
-    <div className="flex items-center justify-between">
-      <button
-        aria-label={t`Decrease quantity by 1`}
-        className="bg-primary disabled:text-disabled-foreground text-primary-foreground disabled:bg-disabled rounded-l-sm p-3 hover:opacity-80 active:scale-95"
+    <div className="flex items-center justify-between overflow-hidden rounded-sm">
+      <Button
+        aria-label={t`Decrement quantity to ${quantityAfterDecrement}`}
         disabled={count === min}
         onClick={() => handleSetCount(count - 1)}
-        type="button"
+        title={t`Decrement quantity to ${quantityAfterDecrement}`}
+        variant="icon"
       >
         <MinusIcon className="size-6" />
-      </button>
+      </Button>
       <TextField
         className="bg-card text-card-foreground flex-1 rounded-none text-center"
         id={id}
@@ -116,15 +128,15 @@ function Counter({ defaultValue = 1, id, min = 0, max, name }: CounterProps) {
         type="text"
         value={count}
       />
-      <button
-        aria-label={t`Increase quantity by 1`}
-        className="bg-primary text-primary-foreground disabled:text-disabled-foreground disabled:bg-disabled rounded-r-sm p-3 hover:opacity-80 active:scale-95"
+      <Button
+        aria-label={t`Increment quantity to ${quantityAfterIncrement}`}
         disabled={count === max}
         onClick={() => handleSetCount(count + 1)}
-        type="button"
+        title={t`Increment quantity to ${quantityAfterIncrement}`}
+        variant="icon"
       >
         <PlusIcon className="size-6" />
-      </button>
+      </Button>
     </div>
   );
 }

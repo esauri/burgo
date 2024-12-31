@@ -103,7 +103,7 @@ export default async function RootLayout(props: Props) {
             sideContent={
               <>
                 <CartHeaderLink cartPromise={cartPromise} lang={lang} />
-                <Suspense fallback={<AuthHeaderLinkFallback />}>
+                <Suspense fallback={<AuthHeaderLinkFallback lang={lang} />}>
                   <AuthHeaderLink authPromise={authPromise} lang={lang} />
                 </Suspense>
               </>
@@ -114,7 +114,7 @@ export default async function RootLayout(props: Props) {
             sideContent={
               <>
                 <CartTab cartPromise={cartPromise} lang={lang} />
-                <Suspense fallback={<AuthTabFallback />}>
+                <Suspense fallback={<AuthTabFallback lang={lang} />}>
                   <AuthTab authPromise={authPromise} lang={lang} />
                 </Suspense>
               </>
