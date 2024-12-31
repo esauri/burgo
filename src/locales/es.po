@@ -60,7 +60,7 @@ msgstr "Burgo"
 
 #: src/app/[lang]/page.tsx:44
 msgid "Burgo Menu"
-msgstr ""
+msgstr "Menú de Burgo"
 
 #: src/app/[lang]/_components/SearchForm.tsx:118
 msgid "Clear search"
@@ -210,7 +210,7 @@ msgstr "Nombre"
 
 #: src/app/[lang]/page.tsx:78
 msgid "No products available"
-msgstr ""
+msgstr "Productos no disponibles"
 
 #: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:41
 msgid "Nutrition"
@@ -252,7 +252,7 @@ msgstr "Productos"
 
 #: src/app/[lang]/page.tsx:60
 msgid "Products not found"
-msgstr ""
+msgstr "No se encontraron productos"
 
 #: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:44
 msgid "Quantity"
@@ -280,7 +280,7 @@ msgstr "Usuario tiene datos inválidos"
 
 #: src/app/[lang]/page.tsx:72
 msgid "View all products"
-msgstr ""
+msgstr "Ver todos los productos"
 
 #: src/app/[lang]/_components/CartNavLink.tsx:24
 msgid "View Cart"
@@ -288,7 +288,7 @@ msgstr "Ver carrito"
 
 #: src/app/[lang]/page.tsx:66
 msgid "We were unable to find any products that matched your search."
-msgstr ""
+msgstr "No se encontraron productos que coincidan con su búsqueda."
 
 #: src/app/[lang]/account/page.tsx:29
 msgid "Welcome,"
