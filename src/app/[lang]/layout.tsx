@@ -118,7 +118,7 @@ export default async function RootLayout(props: Props) {
             }
           />
           {children}
-          <Suspense>{modal}</Suspense>
+          {modal}
           <TabBar
             sideContent={
               <>
