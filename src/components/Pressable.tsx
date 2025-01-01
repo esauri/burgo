@@ -31,7 +31,7 @@ const VariantBaseClassName: Record<Variant, string> = {
   icon: "bg-primary text-primary-foreground p-3 h-12 w-12 border-transparent",
   link: "text-foreground inline-flex justify-center rounded-sm border-transparent underline",
   outline:
-    "border-primary @lg/pressable:w-fit text-primary text-base flex h-12 justify-center rounded-sm px-4 py-3",
+    "border-foreground @lg/pressable:w-fit text-foreground text-base flex h-12 justify-center rounded-sm px-4 py-3",
 };
 
 const VariantButtonDisabledClassName: Record<Variant, string> = {
@@ -50,7 +50,7 @@ const VariantButtonModifierClassName: Record<Variant, string> = {
   ghost: "enabled:hover:bg-primary/20",
   icon: "enabled:hover:opacity-80",
   link: "enabled:hover:opacity-80",
-  outline: "enabled:hover:bg-primary/20",
+  outline: "enabled:hover:bg-foreground/20",
 };
 
 const VariantLinkModifierClassName: Record<Variant, string> = {
@@ -59,7 +59,7 @@ const VariantLinkModifierClassName: Record<Variant, string> = {
   ghost: "hover:bg-primary/20",
   icon: "hover:opacity-80",
   link: "hover:opacity-80",
-  outline: "hover:bg-primary/20",
+  outline: "hover:bg-foreground/20",
 };
 // #endregion
 
