@@ -118,6 +118,7 @@ export default async function RootLayout(props: Props) {
             }
           />
           {children}
+          <Suspense>{modal}</Suspense>
           <TabBar
             sideContent={
               <>
@@ -129,7 +130,6 @@ export default async function RootLayout(props: Props) {
             }
             lang={lang}
           />
-          <Suspense>{modal}</Suspense>
           <Toaster richColors />
         </I18nProvider>
       </body>
