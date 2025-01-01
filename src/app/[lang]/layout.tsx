@@ -1,4 +1,5 @@
 import { msg } from "@lingui/core/macro";
+import { Trans } from "@lingui/react/macro";
 import type { Viewport } from "next";
 import { Geist } from "next/font/google";
 import { type ReactNode, Suspense } from "react";
@@ -97,6 +98,12 @@ export default async function RootLayout(props: Props) {
   return (
     <html className={geistSans.variable} dir="ltr" lang={lang}>
       <body className="bg-background text-foreground antialiased max-lg:pb-24">
+        <a
+          className="bg-background text-foreground fixed inset-x-0 top-0 z-10 -translate-y-full p-6 text-center font-bold transition-transform duration-300 ease-in-out focus:translate-y-0"
+          href="#main-content"
+        >
+          <Trans>Skip to main content</Trans>
+        </a>
         <I18nProvider locale={lang} messages={i18n.messages}>
           <Header
             lang={lang}

@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/[lang]/layout.tsx:85
+#: src/app/[lang]/layout.tsx:86
 msgid "'%s | Burgo"
 msgstr "'%s | Burgo"
 
@@ -53,7 +53,7 @@ msgstr "Letra grande"
 msgid "Body Small"
 msgstr "Letra pequeña"
 
-#: src/app/[lang]/layout.tsx:84
+#: src/app/[lang]/layout.tsx:85
 #: src/app/[lang]/_components/Header.tsx:24
 msgid "Burgo"
 msgstr "Burgo"
@@ -84,7 +84,7 @@ msgstr "Crear"
 msgid "Create Account"
 msgstr "Crear cuenta"
 
-#: src/app/[lang]/layout.tsx:76
+#: src/app/[lang]/layout.tsx:77
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
 
@@ -289,6 +289,10 @@ msgstr "Remover {name}"
 #: src/app/[lang]/cart/page.tsx:26
 msgid "Shopping Cart"
 msgstr "Carrito de compras"
+
+#: src/app/[lang]/layout.tsx:105
+msgid "Skip to main content"
+msgstr "Ir al contenido principal"
 
 #: src/app/[lang]/style-guide/page.tsx:22
 msgid "Title"

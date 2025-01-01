@@ -8,7 +8,10 @@ type Props = {
 
 export function MainContent({ children, className }: Props) {
   return (
-    <main className={cn(["container flex flex-col gap-3 py-6", className])}>
+    <main
+      className={cn(["container flex flex-col gap-3 py-6", className])}
+      id="main-content"
+    >
       {children}
     </main>
   );
