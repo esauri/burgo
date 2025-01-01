@@ -56,6 +56,7 @@ export const viewport: Viewport = {
 
 type Props = Readonly<{
   children: ReactNode;
+  modal: ReactNode;
   params: Promise<{ lang: Language }>;
 }>;
 
@@ -93,7 +94,7 @@ export default async function RootLayout(props: Props) {
   const authPromise = getUser();
   const cartPromise = getCart();
   const i18n = initializeI18n(lang);
-  const { children } = props;
+  const { children, modal } = props;
 
   return (
     <html className={geistSans.variable} dir="ltr" lang={lang}>
@@ -128,6 +129,7 @@ export default async function RootLayout(props: Props) {
             }
             lang={lang}
           />
+          <Suspense>{modal}</Suspense>
           <Toaster richColors />
         </I18nProvider>
       </body>

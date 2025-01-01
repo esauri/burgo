@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/[lang]/layout.tsx:86
+#: src/app/[lang]/layout.tsx:87
 msgid "'%s | Burgo"
 msgstr "'%s | Burgo"
 
@@ -53,7 +53,7 @@ msgstr "Letra grande"
 msgid "Body Small"
 msgstr "Letra pequeña"
 
-#: src/app/[lang]/layout.tsx:85
+#: src/app/[lang]/layout.tsx:86
 #: src/app/[lang]/_components/Header.tsx:24
 msgid "Burgo"
 msgstr "Burgo"
@@ -70,6 +70,10 @@ msgstr "Eliminar carrito"
 msgid "Clear search"
 msgstr "Eliminar búsqueda"
 
+#: src/app/[lang]/@modal/(.)cart/page.tsx:46
+msgid "Close"
+msgstr "Cerrar"
+
 #: src/app/[lang]/cart/_components/CartForm.tsx:244
 msgid "Continue Shopping"
 msgstr "Seguir comprando"
@@ -84,7 +88,7 @@ msgstr "Crear"
 msgid "Create Account"
 msgstr "Crear cuenta"
 
-#: src/app/[lang]/layout.tsx:77
+#: src/app/[lang]/layout.tsx:78
 msgid "Custom built hamburgers"
 msgstr "Hamburguesas personalizadas"
 
@@ -286,11 +290,16 @@ msgstr "Cantidad:"
 msgid "Remove {name}"
 msgstr "Remover {name}"
 
+#: src/app/[lang]/@modal/(.)cart/page.tsx:37
+msgid "Review your order before checkout"
+msgstr "Revisa tu orden antes de pagar"
+
 #: src/app/[lang]/cart/page.tsx:26
+#: src/app/[lang]/@modal/(.)cart/page.tsx:34
 msgid "Shopping Cart"
 msgstr "Carrito de compras"
 
-#: src/app/[lang]/layout.tsx:105
+#: src/app/[lang]/layout.tsx:106
 msgid "Skip to main content"
 msgstr "Ir al contenido principal"
 
