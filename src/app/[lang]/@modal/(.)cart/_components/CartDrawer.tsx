@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { Drawer } from "~/components/Drawer";
 import { useMediaQuery } from "~/helpers/useMediaQuery";
@@ -10,8 +10,9 @@ type Props = {
   href: string;
 };
 
-export function CartDrawer({ children }: Props) {
+export function CartDrawer({ children, href }: Props) {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  const pathname = usePathname();
   const { back } = useRouter();
 
   const handleOpenChange = (open: boolean) => {
@@ -23,7 +24,7 @@ export function CartDrawer({ children }: Props) {
   return (
     <Drawer
       direction={isDesktop ? "right" : "bottom"}
-      open
+      open={pathname === href}
       onOpenChange={handleOpenChange}
     >
       {children}
