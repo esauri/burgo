@@ -21,6 +21,7 @@ pnpm dev
 | `format:check` | Checks for unformatted files                    |
 | `lang`         | Generates translation files in locale directory |
 | `lint`         | Lint the code with ESLint                       |
+| `test`         | Runs e2e tests                                  |
 | `typecheck`    | Checks that code compiles with typescript       |
 
 ## Deploy
