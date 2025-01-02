@@ -17,6 +17,7 @@ export function CartHeaderLink({ cartPromise, lang }: Props) {
   return (
     <div className="relative flex active:scale-95">
       <NavigationLink
+        prefetch={false}
         className="focus-visible:ring-muted hover:bg-muted/20 rounded-full p-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
         href={`/${lang}/cart`}
       >
