@@ -52,7 +52,7 @@ export default async function ProductDetailPage(props: Props) {
             <Image
               alt={i18n._(msg`Image of ${name}`)}
               aspectRatio={1}
-              breakpoints={[256, 304, 320, 327, 354, 382, 592]}
+              breakpoints={[326, 592]}
               className="aspect-square w-full rounded-xl object-cover"
               layout="fullWidth"
               priority

@@ -65,7 +65,7 @@ function Thumbnail({ alt, ...props }: ThumbnailProps) {
     <figure className="overflow-hidden rounded-t-xl">
       <Image
         alt={alt}
-        breakpoints={[256, 304, 320, 327, 354, 382, 592]}
+        breakpoints={[284, 302, 342, 364]}
         height={240}
         layout="fullWidth"
         {...props}
