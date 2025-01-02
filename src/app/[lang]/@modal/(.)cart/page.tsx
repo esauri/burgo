@@ -5,7 +5,6 @@ import {
   DrawerContent,
   DrawerDescription,
   DrawerFooter,
-  DrawerHeader,
   DrawerTitle,
 } from "~/components/Drawer";
 import { Button } from "~/components/Pressable";
@@ -29,15 +28,13 @@ export default async function CartModal(props: Props) {
 
   return (
     <DrawerContent className="max-md:h-[80%] md:inset-x-auto md:right-0 md:bottom-0 md:h-svh md:w-100 md:rounded-l-xl md:rounded-tr-none lg:w-200">
-      <DrawerHeader>
+      <div className="flex flex-1 flex-col gap-3 overflow-y-auto p-4">
         <DrawerTitle>
           <Trans>Shopping Cart</Trans>
         </DrawerTitle>
         <DrawerDescription>
           <Trans>Review your order before checkout</Trans>
         </DrawerDescription>
-      </DrawerHeader>
-      <div className="flex-1 overflow-y-auto px-4">
         <CartForm cartProducts={cartProducts} lang={lang} />
       </div>
       <DrawerFooter>

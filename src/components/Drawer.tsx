@@ -60,12 +60,7 @@ const DrawerContent = forwardRef<
 DrawerContent.displayName = "DrawerContent";
 
 function DrawerHeader({ className, ...props }: ComponentProps<"div">) {
-  return (
-    <div
-      className={cn(["grid gap-1.5 p-4 sm:text-left", className])}
-      {...props}
-    />
-  );
+  return <div className={cn(["grid gap-1.5 p-4", className])} {...props} />;
 }
 
 function DrawerFooter({ className, ...props }: ComponentProps<"div">) {

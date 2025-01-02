@@ -154,7 +154,7 @@ msgstr "Botón fantasma"
 msgid "Ghost Link"
 msgstr "Enlace fantasma"
 
-#: src/app/[lang]/_components/CartNavLink.tsx:39
+#: src/app/[lang]/_components/CartNavLink.tsx:40
 msgid "Go to Cart"
 msgstr "Ir al carrito"
 
@@ -199,7 +199,7 @@ msgstr "Email o contraseña inválidos"
 msgid "Invalid form data"
 msgstr "Información inválida"
 
-#: src/app/[lang]/_components/CartNavLink.tsx:74
+#: src/app/[lang]/_components/CartNavLink.tsx:75
 msgid "Items in cart:"
 msgstr "Elementos en el carrito:"
 
@@ -332,7 +332,7 @@ msgid "View all products"
 msgstr "Ver todos los productos"
 
 #: src/app/[lang]/products/[productId]/_components/AddToCartForm.tsx:41
-#: src/app/[lang]/_components/CartNavLink.tsx:24
+#: src/app/[lang]/_components/CartNavLink.tsx:25
 msgid "View Cart"
 msgstr "Ver carrito"
 

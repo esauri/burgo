@@ -1,8 +1,8 @@
 import { Trans } from "@lingui/react/macro";
 import { ShoppingCartIcon } from "lucide-react";
+import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense } from "react";
-import { NavigationLink } from "~/components/NavigationLink";
 import { cn } from "~/helpers/cn";
 import type { CartItem } from "~/types/Cart";
 import { Language } from "~/types/Language";
@@ -16,7 +16,7 @@ type Props = {
 export function CartHeaderLink({ cartPromise, lang }: Props) {
   return (
     <div className="relative flex active:scale-95">
-      <NavigationLink
+      <Link
         className="focus-visible:ring-muted hover:bg-muted/20 rounded-full p-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
         href={`/${lang}/cart`}
         prefetch={false}
@@ -25,7 +25,7 @@ export function CartHeaderLink({ cartPromise, lang }: Props) {
           <Trans>View Cart</Trans>
         </span>
         <ShoppingCartIcon className="size-6" />
-      </NavigationLink>
+      </Link>
       <Suspense>
         <CartIndicatior cartPromise={cartPromise} className="top-0 right-0" />
       </Suspense>
