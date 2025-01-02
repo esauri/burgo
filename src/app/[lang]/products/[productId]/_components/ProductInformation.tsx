@@ -1,6 +1,6 @@
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
-import { DollarSignIcon, FlameIcon } from "lucide-react";
+import { FlameIcon } from "lucide-react";
 import { Text } from "~/components/Text";
 import { Product } from "~/types/Product";
 
@@ -28,7 +28,6 @@ export function ProductInformation({ calorie, description, price }: Props) {
         </Text>
 
         <dd className="text-primary flex items-center gap-1">
-          <DollarSignIcon className="size-4" />
           <Text as="span" variant="label">
             {i18n.number(price / 100, {
               currency: "USD",

@@ -60,7 +60,9 @@ async function CartIndicatior({ cartPromise, className }: CartIndicatiorProps) {
   try {
     const cart = await cartPromise;
 
-    const count = cart.length;
+    const count = cart.reduce((acc: number, item) => {
+      return acc + item.quantity;
+    }, 0);
 
     if (!count) return null;
 
