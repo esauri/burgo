@@ -16,8 +16,8 @@ export function Tab({ children, href, prefetch }: Props) {
 
   return (
     <Link
-      aria-selected={isSelected}
-      className="aria-selected:border-t-primary focus-visible:ring-muted border-t-4 border-t-transparent p-4 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
+      aria-current={isSelected ? "page" : undefined}
+      className="aria-[current=page]:border-t-primary focus-visible:ring-muted border-t-4 border-t-transparent p-4 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
       href={href}
       prefetch={prefetch}
     >

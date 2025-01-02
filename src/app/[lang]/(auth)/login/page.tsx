@@ -1,4 +1,5 @@
 import { Trans } from "@lingui/react/macro";
+import { Card } from "~/components/Card";
 import { Text } from "~/components/Text";
 import type { Language } from "~/types/Language";
 import { initializeI18n } from "~/usecases/i18n";
@@ -16,10 +17,16 @@ export default async function LoginPage(props: Props) {
 
   return (
     <>
-      <Text className="sr-only" variant="title-lg">
-        <Trans>Log in</Trans>
-      </Text>
-      <LoginForm lang={lang} />
+      <Card.Container>
+        <Card.Header>
+          <Text as="h1" variant="title-lg">
+            <Trans>Log in</Trans>
+          </Text>
+        </Card.Header>
+        <Card.Content>
+          <LoginForm lang={lang} />
+        </Card.Content>
+      </Card.Container>
     </>
   );
 }

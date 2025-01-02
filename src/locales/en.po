@@ -33,7 +33,7 @@ msgstr "Add To Cart"
 msgid "Added {productName} to cart"
 msgstr "Added {productName} to cart"
 
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:106
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:94
 msgid "Already have an account?"
 msgstr "Already have an account?"
 
@@ -82,13 +82,12 @@ msgstr "Close"
 msgid "Continue Shopping"
 msgstr "Continue Shopping"
 
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:102
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:90
 msgid "Create"
 msgstr "Create"
 
-#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:85
-#: src/app/[lang]/(auth)/create-account/page.tsx:20
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:33
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:77
+#: src/app/[lang]/(auth)/create-account/page.tsx:22
 msgid "Create Account"
 msgstr "Create Account"
 
@@ -115,16 +114,16 @@ msgstr "Destructive Button"
 msgid "Destructive Link"
 msgstr "Destructive Link"
 
-#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:83
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:75
 msgid "Don’t have an account?"
 msgstr "Don’t have an account?"
 
-#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:43
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:65
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:35
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:54
 msgid "Email"
 msgstr "Email"
 
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:36
+#: src/app/[lang]/(auth)/create-account/page.tsx:25
 msgid "Enter your email and set a password to get started"
 msgstr "Enter your email and set a password to get started"
 
@@ -228,10 +227,9 @@ msgstr "Link Link"
 msgid "Locale not supported"
 msgstr "Locale not supported"
 
-#: src/app/[lang]/(auth)/login/page.tsx:20
-#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:35
-#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:79
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:108
+#: src/app/[lang]/(auth)/login/page.tsx:23
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:71
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:96
 msgid "Log in"
 msgstr "Log in"
 
@@ -239,7 +237,7 @@ msgstr "Log in"
 msgid "Logout"
 msgstr "Logout"
 
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:47
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:36
 msgid "Name"
 msgstr "Name"
 
@@ -260,8 +258,8 @@ msgstr "Outline Button"
 msgid "Outline Link"
 msgstr "Outline Link"
 
-#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:62
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:84
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:54
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:73
 msgid "Password"
 msgstr "Password"
 
@@ -365,8 +363,8 @@ msgstr "What are you hungry for?"
 msgid "You must be logged in to access this content"
 msgstr "You must be logged in to access this content"
 
-#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:49
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:71
+#: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:41
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:60
 msgid "you@example.com"
 msgstr "you@example.com"
 
@@ -378,6 +376,6 @@ msgstr "Your cart is empty"
 msgid "Your items"
 msgstr "Your items"
 
-#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:53
+#: src/app/[lang]/(auth)/create-account/_components/CreateAccountForm.tsx:42
 msgid "Your Name"
 msgstr "Your Name"
