@@ -6,6 +6,8 @@ export function getErrorMessageFromCode(code: ErrorCode) {
   switch (code) {
     case ERROR_CODE.ACCOUNT_ALREADY_EXISTS:
       return msg`An account with this email already exists`;
+    case ERROR_CODE.CHANGE_LOCALE_ERROR:
+      return msg`Failed to change locale`;
     case ERROR_CODE.CREATE_ACCOUNT_ERROR:
       return msg`Failed to create account`;
     case ERROR_CODE.INVALID_FORM_DATA:
@@ -14,6 +16,8 @@ export function getErrorMessageFromCode(code: ErrorCode) {
       return msg`Please select a valid quantity`;
     case ERROR_CODE.INVALID_USER:
       return msg`User has invalid data`;
+    case ERROR_CODE.LOCALE_NOT_SUPPORTED:
+      return msg`Locale not supported`;
     case ERROR_CODE.LOGIN_ERROR:
       return msg`Invalid email or password`;
     case ERROR_CODE.LOGOUT_ERROR:

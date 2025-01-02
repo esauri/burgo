@@ -19,6 +19,7 @@ import {
 import { CartHeaderLink, CartTab } from "./_components/CartNavLink";
 import { Header } from "./_components/Header";
 import { I18nProvider } from "./_components/I18nProvider";
+import { LocaleSwitcher } from "./_components/LocaleSwitcher";
 import { TabBar } from "./_components/TabBar";
 import "./globals.css";
 
@@ -110,6 +111,7 @@ export default async function RootLayout(props: Props) {
             lang={lang}
             sideContent={
               <>
+                <LocaleSwitcher lang={lang} />
                 <CartHeaderLink cartPromise={cartPromise} lang={lang} />
                 <Suspense fallback={<AuthHeaderLinkFallback lang={lang} />}>
                   <AuthHeaderLink authPromise={authPromise} lang={lang} />
@@ -118,7 +120,6 @@ export default async function RootLayout(props: Props) {
             }
           />
           {children}
-          {modal}
           <TabBar
             sideContent={
               <>
@@ -130,6 +131,7 @@ export default async function RootLayout(props: Props) {
             }
             lang={lang}
           />
+          {modal}
           <Toaster richColors />
         </I18nProvider>
       </body>

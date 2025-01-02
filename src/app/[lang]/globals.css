@@ -40,6 +40,9 @@
   --color-card: var(--brg-color-white);
   --color-card-foreground: var(--brg-color-black);
 
+  --color-popover: var(--brg-color-white);
+  --color-popover-foreground: var(--brg-color-black);
+
   --font-*: initial;
   --font-sans: var(--font-sans), sans-serif;
 }
@@ -58,6 +61,9 @@
 
     --color-card: var(--brg-color-gray-darker);
     --color-card-foreground: var(--brg-color-white);
+
+    --color-popover: var(--brg-color-black);
+    --color-popover-foreground: var(--brg-color-white);
   }
 }
 
