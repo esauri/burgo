@@ -13,12 +13,12 @@ type Props = {
   lang: Language;
 };
 
-export function CartHeaderLink({ cartPromise }: Props) {
+export function CartHeaderLink({ cartPromise, lang }: Props) {
   return (
     <div className="relative flex active:scale-95">
       <NextLink
         className="focus-visible:ring-muted hover:bg-muted/20 rounded-full p-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
-        href="/cart"
+        href={`/${lang}/cart`}
       >
         <span className="sr-only">
           <Trans>View Cart</Trans>
@@ -32,9 +32,9 @@ export function CartHeaderLink({ cartPromise }: Props) {
   );
 }
 
-export function CartTab({ cartPromise }: Props) {
+export function CartTab({ cartPromise, lang }: Props) {
   return (
-    <Tab href="/cart">
+    <Tab href={`/${lang}/cart`}>
       <span className="sr-only">
         <Trans>Go to Cart</Trans>
       </span>
