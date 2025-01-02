@@ -2,7 +2,7 @@ import { Trans } from "@lingui/react/macro";
 import { UserIcon } from "lucide-react";
 import NextLink from "next/link";
 import { connection } from "next/server";
-import { Text } from "~/components/Text";
+import { Link } from "~/components/Pressable";
 import { Language } from "~/types/Language";
 import type { User } from "~/types/User";
 import { Tab } from "./Tab";
@@ -36,14 +36,9 @@ export async function AuthHeaderLink({ authPromise, lang }: Props) {
 
 export function AuthHeaderLinkFallback({ lang }: Pick<Props, "lang">) {
   return (
-    <Text
-      as={NextLink}
-      variant="body-lg"
-      className="focus-visible:ring-muted hover:bg-muted/20 rounded-sm px-3 py-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none active:scale-95"
-      href={`/${lang}/create-account`}
-    >
+    <Link href={`/${lang}/create-account`} variant="ghost">
       <Trans>Get Started</Trans>
-    </Text>
+    </Link>
   );
 }
 

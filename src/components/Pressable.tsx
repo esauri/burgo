@@ -27,7 +27,7 @@ const VariantBaseClassName: Record<Variant, string> = {
   filled:
     "bg-primary border-primary @lg/pressable:w-fit text-primary-foreground text-base flex h-12 justify-center rounded-sm px-4 py-3",
   ghost:
-    "@lg/pressable:w-fit text-primary text-base flex h-12 justify-center rounded-sm border-transparent px-4 py-3 underline",
+    "@lg/pressable:w-fit rounded-sm px-3 border-none py-2 flex transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none",
   icon: "bg-primary text-primary-foreground p-3 h-12 w-12 border-transparent",
   link: "text-foreground inline-flex justify-center rounded-sm border-transparent underline",
   outline:
@@ -47,7 +47,7 @@ const VariantButtonDisabledClassName: Record<Variant, string> = {
 const VariantButtonModifierClassName: Record<Variant, string> = {
   destructive: "enabled:hover:bg-destructive/20",
   filled: "enabled:hover:opacity-80",
-  ghost: "enabled:hover:bg-primary/20",
+  ghost: "enabled:hover:bg-muted/20",
   icon: "enabled:hover:opacity-80",
   link: "enabled:hover:opacity-80",
   outline: "enabled:hover:bg-foreground/20",
@@ -56,7 +56,7 @@ const VariantButtonModifierClassName: Record<Variant, string> = {
 const VariantLinkModifierClassName: Record<Variant, string> = {
   destructive: "hover:bg-destructive/20",
   filled: "hover:opacity-80",
-  ghost: "hover:bg-primary/20",
+  ghost: "hover:bg-muted/20",
   icon: "hover:opacity-80",
   link: "hover:opacity-80",
   outline: "hover:bg-foreground/20",

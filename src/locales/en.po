@@ -13,11 +13,11 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/[lang]/layout.tsx:87
+#: src/app/[lang]/layout.tsx:88
 msgid "'%s | Burgo"
 msgstr "'%s | Burgo"
 
-#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:46
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:45
 msgid "{calorie} Calories"
 msgstr "{calorie} Calories"
 
@@ -53,7 +53,7 @@ msgstr "Body Large"
 msgid "Body Small"
 msgstr "Body Small"
 
-#: src/app/[lang]/layout.tsx:86
+#: src/app/[lang]/layout.tsx:87
 #: src/app/[lang]/_components/Header.tsx:24
 msgid "Burgo"
 msgstr "Burgo"
@@ -61,6 +61,10 @@ msgstr "Burgo"
 #: src/app/[lang]/page.tsx:44
 msgid "Burgo Menu"
 msgstr "Burgo Menu"
+
+#: src/app/[lang]/_components/LocaleSwitcher.tsx:78
+msgid "Choose Language"
+msgstr "Choose Language"
 
 #: src/app/[lang]/cart/_components/CartForm.tsx:120
 msgid "Clear Cart"
@@ -70,7 +74,7 @@ msgstr "Clear Cart"
 msgid "Clear search"
 msgstr "Clear search"
 
-#: src/app/[lang]/@modal/(.)cart/page.tsx:46
+#: src/app/[lang]/@modal/(.)cart/page.tsx:43
 msgid "Close"
 msgstr "Close"
 
@@ -88,7 +92,7 @@ msgstr "Create"
 msgid "Create Account"
 msgstr "Create Account"
 
-#: src/app/[lang]/layout.tsx:78
+#: src/app/[lang]/layout.tsx:79
 msgid "Custom built hamburgers"
 msgstr "Custom built hamburgers"
 
@@ -125,10 +129,14 @@ msgid "Enter your email and set a password to get started"
 msgstr "Enter your email and set a password to get started"
 
 #: src/helpers/errors.ts:10
+msgid "Failed to change locale"
+msgstr "Failed to change locale"
+
+#: src/helpers/errors.ts:12
 msgid "Failed to create account"
 msgstr "Failed to create account"
 
-#: src/helpers/errors.ts:20
+#: src/helpers/errors.ts:24
 msgid "Failed to log out"
 msgstr "Failed to log out"
 
@@ -141,7 +149,7 @@ msgstr "Filled Button"
 msgid "Filled Link"
 msgstr "Filled Link"
 
-#: src/app/[lang]/_components/AuthNavLink.tsx:45
+#: src/app/[lang]/_components/AuthNavLink.tsx:40
 msgid "Get Started"
 msgstr "Get Started"
 
@@ -158,7 +166,7 @@ msgstr "Ghost Link"
 msgid "Go to Cart"
 msgstr "Go to Cart"
 
-#: src/app/[lang]/_components/AuthNavLink.tsx:73
+#: src/app/[lang]/_components/AuthNavLink.tsx:68
 msgid "Go to Create Account"
 msgstr "Go to Create Account"
 
@@ -167,7 +175,7 @@ msgid "Go to Home"
 msgstr "Go to Home"
 
 #: src/app/[lang]/_components/AuthNavLink.tsx:27
-#: src/app/[lang]/_components/AuthNavLink.tsx:59
+#: src/app/[lang]/_components/AuthNavLink.tsx:54
 msgid "Got to Account"
 msgstr "Got to Account"
 
@@ -191,15 +199,15 @@ msgstr "Increment quantity of {name} to {quantityAfterIncrement}"
 msgid "Increment quantity to {quantityAfterIncrement}"
 msgstr "Increment quantity to {quantityAfterIncrement}"
 
-#: src/helpers/errors.ts:18
+#: src/helpers/errors.ts:22
 msgid "Invalid email or password"
 msgstr "Invalid email or password"
 
-#: src/helpers/errors.ts:12
+#: src/helpers/errors.ts:14
 msgid "Invalid form data"
 msgstr "Invalid form data"
 
-#: src/app/[lang]/_components/CartNavLink.tsx:75
+#: src/app/[lang]/_components/CartNavLink.tsx:77
 msgid "Items in cart:"
 msgstr "Items in cart:"
 
@@ -215,6 +223,10 @@ msgstr "Link Button"
 #: src/app/[lang]/style-guide/page.tsx:75
 msgid "Link Link"
 msgstr "Link Link"
+
+#: src/helpers/errors.ts:20
+msgid "Locale not supported"
+msgstr "Locale not supported"
 
 #: src/app/[lang]/(auth)/login/page.tsx:20
 #: src/app/[lang]/(auth)/login/_components/LoginForm.tsx:35
@@ -235,7 +247,7 @@ msgstr "Name"
 msgid "No products available"
 msgstr "No products available"
 
-#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:41
+#: src/app/[lang]/products/[productId]/_components/ProductInformation.tsx:40
 msgid "Nutrition"
 msgstr "Nutrition"
 
@@ -253,7 +265,7 @@ msgstr "Outline Link"
 msgid "Password"
 msgstr "Password"
 
-#: src/helpers/errors.ts:14
+#: src/helpers/errors.ts:16
 msgid "Please select a valid quantity"
 msgstr "Please select a valid quantity"
 
@@ -265,7 +277,7 @@ msgstr "Price"
 msgid "Product information"
 msgstr "Product information"
 
-#: src/helpers/errors.ts:24
+#: src/helpers/errors.ts:28
 msgid "Product not found"
 msgstr "Product not found"
 
@@ -290,16 +302,16 @@ msgstr "Quantity:"
 msgid "Remove {name}"
 msgstr "Remove {name}"
 
-#: src/app/[lang]/@modal/(.)cart/page.tsx:37
+#: src/app/[lang]/@modal/(.)cart/page.tsx:36
 msgid "Review your order before checkout"
 msgstr "Review your order before checkout"
 
 #: src/app/[lang]/cart/page.tsx:26
-#: src/app/[lang]/@modal/(.)cart/page.tsx:34
+#: src/app/[lang]/@modal/(.)cart/page.tsx:33
 msgid "Shopping Cart"
 msgstr "Shopping Cart"
 
-#: src/app/[lang]/layout.tsx:106
+#: src/app/[lang]/layout.tsx:107
 msgid "Skip to main content"
 msgstr "Skip to main content"
 
@@ -319,11 +331,11 @@ msgstr "Title Small"
 msgid "Total:"
 msgstr "Total:"
 
-#: src/helpers/errors.ts:26
+#: src/helpers/errors.ts:30
 msgid "Unable to update cart"
 msgstr "Unable to update cart"
 
-#: src/helpers/errors.ts:16
+#: src/helpers/errors.ts:18
 msgid "User has invalid data"
 msgstr "User has invalid data"
 
@@ -349,7 +361,7 @@ msgstr "Welcome,"
 msgid "What are you hungry for?"
 msgstr "What are you hungry for?"
 
-#: src/helpers/errors.ts:22
+#: src/helpers/errors.ts:26
 msgid "You must be logged in to access this content"
 msgstr "You must be logged in to access this content"
 
