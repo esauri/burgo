@@ -4,7 +4,7 @@ import { useLingui } from "@lingui/react/macro";
 import { debounce } from "es-toolkit/function";
 import { LoaderIcon, SearchIcon, XIcon } from "lucide-react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   type ChangeEvent,
   type FormEvent,
@@ -23,6 +23,7 @@ type Props = {
 
 export function SearchForm({ lang }: Props) {
   const { t } = useLingui();
+  const pathname = usePathname();
   const formRef = useRef<HTMLFormElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const { push } = useRouter();
@@ -94,6 +95,7 @@ export function SearchForm({ lang }: Props) {
       <label className="relative flex w-full items-center">
         <SearchIcon className="absolute left-4 size-4 opacity-60" />
         <TextField
+          key={`pages:${pathname}`}
           autoComplete="off"
           className="h-12 px-12"
           defaultValue={currentQuery}

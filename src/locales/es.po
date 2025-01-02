@@ -70,7 +70,7 @@ msgstr "Elegir idioma"
 msgid "Clear Cart"
 msgstr "Eliminar carrito"
 
-#: src/app/[lang]/_components/SearchForm.tsx:118
+#: src/app/[lang]/_components/SearchForm.tsx:120
 msgid "Clear search"
 msgstr "Eliminar búsqueda"
 
@@ -354,8 +354,8 @@ msgstr "No se encontraron productos que coincidan con su búsqueda."
 msgid "Welcome,"
 msgstr "Bienvenido,"
 
-#: src/app/[lang]/_components/SearchForm.tsx:103
-#: src/app/[lang]/_components/SearchForm.tsx:137
+#: src/app/[lang]/_components/SearchForm.tsx:105
+#: src/app/[lang]/_components/SearchForm.tsx:139
 msgid "What are you hungry for?"
 msgstr "¿Qué deseas comer?"
 
