@@ -13,7 +13,7 @@ export function TabBar({ lang, sideContent }: Props) {
   return (
     <nav className="bg-card text-card-foreground fixed bottom-0 w-full pb-[env(safe-area-inset-bottom)] lg:hidden">
       <div className="container flex items-center justify-center gap-6">
-        <Tab href={`/${lang}`}>
+        <Tab href={`/${lang}`} prefetch>
           <span className="sr-only">
             <Trans>Go to Home</Trans>
           </span>

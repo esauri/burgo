@@ -23,6 +23,8 @@
 
   --color-border: var(--brg-color-gray-lighter);
 
+  --color-backdrop: var(--brg-color-black);
+
   --color-primary: var(--brg-color-yellow);
   --color-primary-foreground: var(--brg-color-black);
 

@@ -1,6 +1,6 @@
 import { Trans } from "@lingui/react/macro";
 import { ShoppingCartIcon } from "lucide-react";
-import NextLink from "next/link";
+import Link from "next/link";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { cn } from "~/helpers/cn";
@@ -13,18 +13,19 @@ type Props = {
   lang: Language;
 };
 
-export function CartHeaderLink({ cartPromise }: Props) {
+export function CartHeaderLink({ cartPromise, lang }: Props) {
   return (
     <div className="relative flex active:scale-95">
-      <NextLink
+      <Link
         className="focus-visible:ring-muted hover:bg-muted/20 rounded-full p-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
-        href="/cart"
+        href={`/${lang}/cart`}
+        prefetch={false}
       >
         <span className="sr-only">
           <Trans>View Cart</Trans>
         </span>
         <ShoppingCartIcon className="size-6" />
-      </NextLink>
+      </Link>
       <Suspense>
         <CartIndicatior cartPromise={cartPromise} className="top-0 right-0" />
       </Suspense>
@@ -32,9 +33,9 @@ export function CartHeaderLink({ cartPromise }: Props) {
   );
 }
 
-export function CartTab({ cartPromise }: Props) {
+export function CartTab({ cartPromise, lang }: Props) {
   return (
-    <Tab href="/cart">
+    <Tab href={`/${lang}/cart`} prefetch={false}>
       <span className="sr-only">
         <Trans>Go to Cart</Trans>
       </span>
@@ -59,7 +60,9 @@ async function CartIndicatior({ cartPromise, className }: CartIndicatiorProps) {
   try {
     const cart = await cartPromise;
 
-    const count = cart.length;
+    const count = cart.reduce((acc: number, item) => {
+      return acc + item.quantity;
+    }, 0);
 
     if (!count) return null;
 

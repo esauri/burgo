@@ -28,17 +28,15 @@ export async function setCart(cart: CartItem[]) {
   try {
     const cookieStore = await cookies();
 
-    if (cart.length === 0) {
-      cookieStore.delete(CART_COOKIE_NAME);
-    } else {
-      cookieStore.set(CART_COOKIE_NAME, JSON.stringify(cart), {
-        domain: COOKIE_STORAGE_DOMAIN,
-        expires: new Date(Date.now() + 1000 * 60 * 60 * 24 * 7),
-        httpOnly: true,
-        sameSite: "strict",
-        secure: true,
-      });
-    }
+    const maxAge = cart.length > 0 ? 86400 * 7 : 0;
+
+    cookieStore.set(CART_COOKIE_NAME, JSON.stringify(cart), {
+      domain: COOKIE_STORAGE_DOMAIN,
+      httpOnly: true,
+      maxAge,
+      sameSite: "strict",
+      secure: true,
+    });
 
     return true;
   } catch (error) {

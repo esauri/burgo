@@ -54,7 +54,7 @@ export async function AuthTab({ authPromise, lang }: Props) {
     await authPromise;
 
     return (
-      <Tab href={`/${lang}/account`}>
+      <Tab href={`/${lang}/account`} prefetch>
         <span className="sr-only">
           <Trans>Got to Account</Trans>
         </span>
@@ -68,7 +68,7 @@ export async function AuthTab({ authPromise, lang }: Props) {
 
 export function AuthTabFallback({ lang }: Pick<Props, "lang">) {
   return (
-    <Tab href={`/${lang}/create-account`}>
+    <Tab href={`/${lang}/create-account`} prefetch>
       <span className="sr-only">
         <Trans>Go to Create Account</Trans>
       </span>

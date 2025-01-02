@@ -105,7 +105,7 @@ export function CartForm({ cartProducts: _cartProducts, lang }: Props) {
   }
 
   return (
-    <section className="flex flex-col gap-4">
+    <section className="@container flex flex-col gap-4">
       <div className="flex items-center justify-between gap-3">
         <Text variant="title-sm">
           <Trans>Your items</Trans>
@@ -161,7 +161,7 @@ function ProductItem({
   const totalPrice = price * quantity;
 
   return (
-    <section className="flex flex-col justify-between gap-3 lg:flex-row">
+    <section className="flex flex-col justify-between gap-3 @lg:flex-row">
       <div className="flex items-center gap-3">
         <Image
           alt={t`Image of ${name}`}
@@ -178,7 +178,7 @@ function ProductItem({
         </Text>
       </div>
       <div className="flex items-center justify-between gap-x-6">
-        <Text as="p" className="text-muted" variant="label">
+        <Text as="p" variant="label">
           {i18n.number(totalPrice / 100, {
             currency: "USD",
             style: "currency",
