@@ -17,9 +17,9 @@ export function CartHeaderLink({ cartPromise, lang }: Props) {
   return (
     <div className="relative flex active:scale-95">
       <NavigationLink
-        prefetch={false}
         className="focus-visible:ring-muted hover:bg-muted/20 rounded-full p-2 transition focus-visible:ring focus-visible:ring-offset-2 focus-visible:outline-none"
         href={`/${lang}/cart`}
+        prefetch={false}
       >
         <span className="sr-only">
           <Trans>View Cart</Trans>
@@ -35,7 +35,7 @@ export function CartHeaderLink({ cartPromise, lang }: Props) {
 
 export function CartTab({ cartPromise, lang }: Props) {
   return (
-    <Tab href={`/${lang}/cart`}>
+    <Tab href={`/${lang}/cart`} prefetch={false}>
       <span className="sr-only">
         <Trans>Go to Cart</Trans>
       </span>
