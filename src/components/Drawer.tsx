@@ -52,7 +52,7 @@ const DrawerContent = forwardRef<
       ])}
       {...props}
     >
-      <div className="bg-muted mx-auto mt-4 h-1 w-20 rounded-full" />
+      <div className="bg-muted mx-auto mt-4 h-1 w-20 rounded-full md:hidden" />
       {children}
     </DrawerPrimitive.Content>
   </DrawerPortal>

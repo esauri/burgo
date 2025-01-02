@@ -27,7 +27,7 @@ export default async function CartModal(props: Props) {
   initializeI18n(lang);
 
   return (
-    <DrawerContent className="max-md:h-[80%] md:inset-x-auto md:right-0 md:bottom-0 md:h-svh md:w-100 md:rounded-l-xl md:rounded-tr-none lg:w-200">
+    <DrawerContent className="max-md:h-[80%] md:inset-x-auto md:right-0 md:bottom-0 md:h-svh md:w-100 md:rounded-l-xl md:rounded-tr-none lg:w-160">
       <div className="flex flex-1 flex-col gap-3 overflow-y-auto p-4">
         <DrawerTitle>
           <Trans>Shopping Cart</Trans>
